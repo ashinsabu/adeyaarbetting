@@ -1,0 +1,14 @@
+.hero-img::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	@apply bg-gradient-to-t from-zinc-900;
+}
+
+.hero-img img {
+	filter: brightness(0.25);
+}
