@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GayBetting</title>
+</head>
+<body>
+    <div class="header">
+        <h1>AdeYaarBetting</h1>
+    </div>
+    <h3>Betting open for:</h3>
+    <div class="match-info">
+        <div class="team-1 teambox">
+            <p class="country-name">England</p>
+            <img class="team-flag" src="assets/england.png">
+            <div class="place-bet" data-team="1">Place Bet</div>
+        </div>
+        <div class="vs teambox">
+            vs
+        </div>
+        <div class="team-2 teambox">
+            <p class="country-name">Iran</p>
+            <img class="team-flag" src="assets/iran.png">
+            <div class="place-bet" data-team="2">Place Bet</div>
+        </div>
+    </div>
+    <div class="view-bets">View Bets</div>
+    <script src ="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBWzT9HD77y5R4dDLDA5YU2DXE5h9-DqCw",
+          authDomain: "adeyaar-bc4d6.firebaseapp.com",
+          databaseURL: "https://adeyaar-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "adeyaar",
+          storageBucket: "adeyaar.appspot.com",
+          messagingSenderId: "737899607451",
+          appId: "1:737899607451:web:1de65c443da9d107a5dd3e"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
