@@ -25,7 +25,7 @@
                 <div class="modal-dialog modal-lg1">
                   <div class="modal-content">
 
-                    <div class="bet-information" data-betteam="1">
+                    <div class="bet-information" data-betteam="2">
                         <h2 style="text-align: center; font-weight: bold;">Bet Information</h2>
                         <div>
                             <p class="field-label">Username</p>
@@ -44,7 +44,7 @@
                                 <div class="bet-amount">20</div>
                             </div>
                         </div>
-                        <button type="button" class="submit-bet">Place Your Bet</button>
+                        <button type="button" class="submit-bet" data-betteam="2">Place Your Bet</button>
                     </div>
 
                   </div>
@@ -84,7 +84,7 @@
                                 <div class="bet-amount">20</div>
                             </div>
                         </div>
-                        <button type="button" class="submit-bet">Place Your Bet</button>
+                        <button type="button" class="submit-bet" data-betteam="2">Place Your Bet</button>
                     </div>
 
                   </div>
@@ -93,12 +93,37 @@
         </div>
     </div>
     <p style="margin-top: 32px; text-align: center; font-size: 14px; width: 30vh;">Note: If you've previously placed a bet it will be replaced.</p>
-    <div class="view-bets">View Bets</div>
+    <div class="current-bets">Current Bets</div>
+    <div class="tables">
+        <table class="bet-table team1-table">
+            <tr>
+                <th>User</th>
+                <th>Bet Amt.</th>
+                <th>Possible Win</th>
+            </tr>
+            <tr>
+                <td>Ashin</td>
+                <td>15</td>
+                <td>13.333</td>
+            </tr>
+        </table>
+        <table class="bet-table team2-table">
+            <tr>
+                <th>User</th>
+                <th>Bet Amt.</th>
+                <th>Possible Win</th>
+            </tr>
+            <tr>
+                <td>Ashin</td>
+                <td>15</td>
+                <td>13.333</td>
+            </tr>
+        </table>
+    </div>
     <div class="footer">Made with ❤️ by Ashin, Boidushya, Jayesh</div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src ="script.js"></script>
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
@@ -118,6 +143,8 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-      </script>
+    </script>
+    <script src ="script.js" type="module"></script>
+
 </body>
 </html>

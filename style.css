@@ -94,18 +94,12 @@ body{
     transform: scale(1.05);
 }
 
-.view-bets{    
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin: 32px;
-    margin-top: 48px;
-    text-align: center;
-    padding: 8px 32px;
-    background-color: #D23369;
-    /* border: 1px solid #650f2c; */
-    color:  white;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out ;
+.current-bets{    
+    margin-top: 16px;
+    font-size: 22px;
+    font-weight: bold;
 }
+
 .view-bets:hover{
     transform: scale(1.05);
 }
@@ -153,4 +147,15 @@ body{
 }
 .modal input{
     font-size: 18px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.tables{
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+
 }
