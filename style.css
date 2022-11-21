@@ -20,7 +20,7 @@ a{
 }
 
 body{
-    background-color: rgba(119, 119, 119, 0.227);
+    background-color: #f062911f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,13 +28,22 @@ body{
 
 .header{
     margin: 16px;
-    
+    color: #2A3990;
 }
 
 .header >h1{
     font-weight: bold;
 }
-
+.open-close-status{
+    font-size: 22px;
+    font-weight: bold;
+}
+.open{
+    color:green;
+}
+.closed{
+    color: red;
+}
 .match-info{
     margin-top: 4vh;
     margin-left: 3vh;
@@ -44,26 +53,35 @@ body{
 }
 
 .teambox{
+    
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
 }
-
+.vs{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
 .team-flag{
     width: 32vh; 
     height: 16vh; 
     object-fit: cover; 
     object-position: 50% 50%;
+    
 }
 
 .place-bet{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin-top: 16px;
     text-align: center;
     padding: 8px 16px;
-    background-color: #ee84a77a;
-    color:  #9C254D;
+    background-color: #D23369;
+    color:  white;
     cursor: pointer;
     transition: transform 0.2s ease-in-out ;
 }
@@ -73,16 +91,21 @@ body{
 }
 
 .view-bets{    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 32px;
-    margin-top: 64px;
+    margin-top: 48px;
     text-align: center;
-    padding: 8px;
-    background-color: #ee84a77a;
-    border: 1px solid #650f2c;
-    color:  #9C254D;
+    padding: 8px 32px;
+    background-color: #D23369;
+    /* border: 1px solid #650f2c; */
+    color:  white;
     cursor: pointer;
     transition: transform 0.2s ease-in-out ;
 }
 .view-bets:hover{
     transform: scale(1.05);
+}
+.footer{
+    position: absolute;
+    bottom: 8px;
 }
