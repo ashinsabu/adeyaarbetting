@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
 /* CSS RESET */  
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Space Grotesk', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 ol, ul {
@@ -84,6 +86,8 @@ body{
     color:  white;
     cursor: pointer;
     transition: transform 0.2s ease-in-out ;
+    border: none !important;
+    border-radius: 0;
 }
 
 .place-bet:hover{
@@ -108,4 +112,45 @@ body{
 .footer{
     position: absolute;
     bottom: 8px;
+}
+
+.bet-information{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    gap: 24px;
+}
+#username{
+    outline: none;
+    border: 1px solid grey;;
+}
+#password{
+    outline: none;
+    border: 1px solid grey;
+}
+.bet-amounts{
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+.bet-amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 24px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: teal;
+    color: white;
+}
+.submit-bet{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background-color: #2A3990;
+    color: white;
+}
+.modal input{
+    font-size: 18px;
 }
