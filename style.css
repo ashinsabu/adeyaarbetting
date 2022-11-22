@@ -137,6 +137,9 @@ body{
     background-color: teal;
     color: white;
 }
+.active{
+    background-color:grey;
+}
 .submit-bet{
     font-size: 18px;
     border: none;
@@ -144,6 +147,13 @@ body{
     padding: 8px 16px;
     background-color: #2A3990;
     color: white;
+    transition: transform 0.1s ease-in-out;
+}
+.submit-bet:hover{
+    transform: scale(0.96);
+}
+.submit-bet:active{
+    transform: scale(0.9);
 }
 .modal input{
     font-size: 18px;
@@ -152,10 +162,13 @@ body{
 table, th, td {
     border: 1px solid;
 }
+th,td{
+    text-align: center;
+}
 
 .tables{
     display: flex;
     margin-left: 8px;
     margin-right: 8px;
-
+    gap: 16px;
 }
