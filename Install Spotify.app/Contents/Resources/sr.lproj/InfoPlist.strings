@@ -1,9 +1,0 @@
-/*
-  InfoPlist.strings
-
-  Copyright Spotify. All rights reserved.
-*/
-
-
-"CFBundleDisplayName" = "Alatka za instaliranje usluge Spotify";
-"CFBundleName" = "Alatka za instaliranje usluge Spotify";
