@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify inahitaji ruhusa ili kusakinisha.";
+"sInstallerOsxAskUserToQuitSpotify" = "Tafadhali funga Spotify kisha ujaribu tena";
+"sInstallerOsxContinueInBackground" = "Endelea chinichini";
+"sInstallerOsxDownloadFailedErrorDescription" = "Hitilafu imetokea wakati wa kujaribu kupakua Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Imeshindwa kupakua. Inajaribu tena baada ya sekunde %1$d.";
+"sInstallerOsxDownloadingSpotify" = "Inapakua Spotify...";
+"sInstallerOsxExtractionFailedErrorDescription" = "Hitilafu imetokea wakati wa kujaribu kuchopoa Spotify.";
+"sInstallerOsxGenericErrorDescription" = "Hitilafu imetokea wakati wa kujaribu kusakinisha Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Hitilafu imetokea wakati wa kujaribu kusakinisha Spotify.";
+"sInstallerOsxInstallationFailed" = "Imeshindwa Kusakinisha";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Pakua kutoka Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Endelea Kusakinisha";
+"sInstallerOsxInstallationIncompleteDesc" = "Inakaribia kumaliza kusakinisha Spotify. Una uhakika ungependa kufunga?";
+"sInstallerOsxInstallationIncompleteTitle" = "Haijakamilisha Kusakinisha";
+"sInstallerOsxInstallingSpotify" = "Inasakinisha Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Kuhusu Kipengele cha Kusakinisha Spotify";
+"sInstallerOsxMMBringAllToFront" = "Leta Zote Mbele";
+"sInstallerOsxMMHelp" = "Usaidizi";
+"sInstallerOsxMMHideInstallSpotify" = "Ficha Kipengele cha Kusakinisha Spotify";
+"sInstallerOsxMMHideOthers" = "Ficha Nyingine";
+"sInstallerOsxMMInstallSpotify" = "Kipengele cha Kusakinisha Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Usaidizi wa Kipengele cha Kusakinisha Spotify";
+"sInstallerOsxMMMinimize" = "Punguza";
+"sInstallerOsxMMQuitInstallSpotify" = "Funga Kipengele cha Kusakinisha Spotify";
+"sInstallerOsxMMServices" = "Huduma";
+"sInstallerOsxMMShowAll" = "Onyesha Zote";
+"sInstallerOsxMMWindow" = "Dirisha";
+"sInstallerOsxMMZoom" = "Kuza";
+"sInstallerOsxMountFailedErrorDescription" = "Hitilafu imetokea wakati wa kujaribu kupachika picha ya diski ya Spotify iliyopakuliwa.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Usisogeze";
+"sInstallerOsxMoveApplicationButtonMove" = "Hamishia kwenye folda ya Programu";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Imeshindwa kuhamishia kwenye folda ya Programu";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Hatua hii itapanga faili katika folda yako ya Vipakuliwa.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Kumbuka kuwa hatua hii itahitaji nenosiri la msimamizi.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Ninaweza kuhamishia kwenye folda ya Programu ikiwa ungependa nikusaidie.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Ungependa kuhamishia kwenye folda ya Programu?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Ungependa kuhamishia katika folda ya Programu kwenye folda yako ya Mwanzo?";
+"sInstallerOsxQuitButtonTitle" = "Funga";
+"sInstallerOsxUnsupportedPlatformDesc" = "Samahani, toleo hili la Spotify ni la macOS %1$s au toleo jipya zaidi.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Tafuta visakinishaji vya matoleo ya zamani";
+"sInstallerOsxUnsupportedPlatformTitle" = "Mfumo Usiotumika";

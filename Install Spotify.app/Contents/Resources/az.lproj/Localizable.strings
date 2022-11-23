@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify quraşdırmaq üçün icazə tələb edir.";
+"sInstallerOsxAskUserToQuitSpotify" = "Spotify-dan çıxın və yenidən cəhd edin";
+"sInstallerOsxContinueInBackground" = "Arxa fonda davam et";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify-ı endirməyə çalışarkən xəta baş verdi.";
+"sInstallerOsxDownloadFailedRetryIn" = "Endirmə uğursuz oldu. %1$d san sonra təkrar cəhd ediləcək.";
+"sInstallerOsxDownloadingSpotify" = "Spotify endirilir…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify-ı çıxarmağa çalışarkən xəta baş verdi.";
+"sInstallerOsxGenericErrorDescription" = "Spotify-ı quraşdırmağa çalışarkən xəta baş verdi.";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotify-ı quraşdırmağa çalışarkən xəta baş verdi.";
+"sInstallerOsxInstallationFailed" = "Quraşdırma uğursuz oldu";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com saytından endir";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Quraşdırmaya davam et";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify-ın quraşdırılması demək olar ki, tamamlanıb. Həqiqətən çıxmaq istəyirsiniz?";
+"sInstallerOsxInstallationIncompleteTitle" = "Quraşdırma tamamlanmayıb";
+"sInstallerOsxInstallingSpotify" = "Spotify quraşdırılır…";
+"sInstallerOsxMMAboutInstallSpotify" = "\"Spotify-ı Quraşdırın\" haqqında";
+"sInstallerOsxMMBringAllToFront" = "Hamısını Önə gətir";
+"sInstallerOsxMMHelp" = "Yardım";
+"sInstallerOsxMMHideInstallSpotify" = "\"Spotify-ı Quraşdırın\"-ı gizlət";
+"sInstallerOsxMMHideOthers" = "Digərlərini gizlət";
+"sInstallerOsxMMInstallSpotify" = "Spotify-ı Quraşdırın";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify-ı Quraşdırın - Yardım";
+"sInstallerOsxMMMinimize" = "Kiçilt";
+"sInstallerOsxMMQuitInstallSpotify" = "\"Spotify-ı Quraşdır\"-dan çıx";
+"sInstallerOsxMMServices" = "Xidmətlər";
+"sInstallerOsxMMShowAll" = "Hamısını göstər";
+"sInstallerOsxMMWindow" = "Pəncərə";
+"sInstallerOsxMMZoom" = "Miqyası dəyiş";
+"sInstallerOsxMountFailedErrorDescription" = "Endirilmiş Spotify disk şəklini yığmağa çalışarkən xəta baş verdi.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Yerini dəyişmə";
+"sInstallerOsxMoveApplicationButtonMove" = "Tətbiqlər qovluğuna köçür";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Tətbiqlər qovluğuna köçürmək mümkün olmadı";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Bununla Endirmələr qovluğunuz səliqəli qalacaq.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Qeyd edək ki, bunun üçün inzibatçı parolu tələb olunacaq.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "İstəsəniz, özümü Tətbiqlər qovluğuna köçürə bilərəm.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Tətbiqlər qovluğuna köçürülsün?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Əsas səhifə qovluğunuzdakı Tətbiqlər qovluğuna köçürülsün?";
+"sInstallerOsxQuitButtonTitle" = "Çıx";
+"sInstallerOsxUnsupportedPlatformDesc" = "Təəssüf ki, Spotify-ın bu versiyası macOS %1$s və ya daha yeni versiyalar üçündür.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Daha köhnə versiyalar üçün quraşdırıcıları tapın";
+"sInstallerOsxUnsupportedPlatformTitle" = "Dəstəklənməyən Platforma";

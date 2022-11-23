@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "I-Spotify idinga imvume yokufaka.";
+"sInstallerOsxAskUserToQuitSpotify" = "Sicela uyeke i-Spotify bese uzame futhi";
+"sInstallerOsxContinueInBackground" = "Qhubeka kungemuva";
+"sInstallerOsxDownloadFailedErrorDescription" = "Kuvele iphutha ngenkathi izama ukudawuniloda i-Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Ukudawuniloda kuhlulekile. Izama kabusha emzuzwaneni engu-%1$d.";
+"sInstallerOsxDownloadingSpotify" = "Idawuniloda I-Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Kuvele iphutha ngenkathi izama ukumonyula i-Spotify.";
+"sInstallerOsxGenericErrorDescription" = "Kuvele iphutha ngenkathi izama ukufaka i-Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Kuvele iphutha ngenkathi izama ukufaka i-Spotify.";
+"sInstallerOsxInstallationFailed" = "Ukufaka Kuhlulekile";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Dawuniloda ku-Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Qhubeka Nokufaka";
+"sInstallerOsxInstallationIncompleteDesc" = "Ukufakwa kwe-Spotify sekuzophela. Ingabe ufuna ukuyeka ngempela?";
+"sInstallerOsxInstallationIncompleteTitle" = "Ukufaka Akuphelile";
+"sInstallerOsxInstallingSpotify" = "Ifaka I-Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Mayelana Nokufaka I-Spotify";
+"sInstallerOsxMMBringAllToFront" = "Letha Konke Phambili";
+"sInstallerOsxMMHelp" = "Usizo";
+"sInstallerOsxMMHideInstallSpotify" = "Fihla Ukufaka I-Spotify";
+"sInstallerOsxMMHideOthers" = "Fihla Abanye";
+"sInstallerOsxMMInstallSpotify" = "Faka I-Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Faka Usizo Lwe-Spotify";
+"sInstallerOsxMMMinimize" = "Nciphisa";
+"sInstallerOsxMMQuitInstallSpotify" = "Yeka Ukufaka I-Spotify";
+"sInstallerOsxMMServices" = "Amasevisi";
+"sInstallerOsxMMShowAll" = "Bonisa Konke";
+"sInstallerOsxMMWindow" = "Iwindi";
+"sInstallerOsxMMZoom" = "Khulisa";
+"sInstallerOsxMountFailedErrorDescription" = "Kuvele iphutha ngenkathi izama ukukhweza umfanekiso wediski ye-Spotify odawunilodiwe.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Ungahambisi";
+"sInstallerOsxMoveApplicationButtonMove" = "Hambisa kufolda ethi Izinhlelo";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Ayikwazanga ukuhambisa kufolda ethi Izinhlelo";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Lokhu kuzogcina ifolda yakho ethi Okudawunilodiwe ingenayo imfuhluza.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Qaphela ukuthi lokhu kuzodinga iphasiwedi yomlawuli.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Ngingazihambisa kufolda ethi Izinhlelo uma uthanda.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Hambisa kufolda ethi Izinhlelo?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Hambisa kufolda ethi Izinhlelo kufolda yakho Yekhaya?";
+"sInstallerOsxQuitButtonTitle" = "Yeka";
+"sInstallerOsxUnsupportedPlatformDesc" = "Uxolo, le nguqulo ye-Spotify eye-macOS %1$s noma eyakamuva.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Thola izifaki zezinguqulo ezindala";
+"sInstallerOsxUnsupportedPlatformTitle" = "Inkundla Engasekelwa";

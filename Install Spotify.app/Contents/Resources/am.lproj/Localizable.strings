@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify ለመጫን ፍቃድ ይፈልጋል።";
+"sInstallerOsxAskUserToQuitSpotify" = "እባክዎ Spotifyን ያቋርጡ እና እንደገና ይሞክሩ";
+"sInstallerOsxContinueInBackground" = "ከበስተጀርባ ይቀጥሉ";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify ለማውረድ በመሞከር ላይ ሳለ ስህተት ተከስቷል።";
+"sInstallerOsxDownloadFailedRetryIn" = "ማውረድ አልተሳካም። በ %1$d ሰከንድ ውስጥ እንደገና በመሞከር ላይ።";
+"sInstallerOsxDownloadingSpotify" = "Spotifyን በማውረድ ላይ…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify ን ለማውጣት በመሞከር ላይ ሳለ አንድ ስህተት ተከስቷል።";
+"sInstallerOsxGenericErrorDescription" = "Spotifyን ለመጫን በመሞከር ላይ ሳለ ስህተት ተከስቷል።";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotifyን ለመጫን በመሞከር ላይ ስህተት ተከስቷል።";
+"sInstallerOsxInstallationFailed" = "መጫኑ አልተሳካም።";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "ከ Spotify.com አውርድ";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "መጫን ይቀጥሉ";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotif y መጫን ከሞላ ጎደል ተጠናቅቋል። በእርግጥ ማቆም ይፈልጋሉ?";
+"sInstallerOsxInstallationIncompleteTitle" = "መጫኑ አልተጠናቀቀም።";
+"sInstallerOsxInstallingSpotify" = "Spotifyን በመጫን ላይ…";
+"sInstallerOsxMMAboutInstallSpotify" = "Spotify ስለመጫን";
+"sInstallerOsxMMBringAllToFront" = "ሁሉንም ወደፊት አምጣ";
+"sInstallerOsxMMHelp" = "እገዛ";
+"sInstallerOsxMMHideInstallSpotify" = "ደብቅ Spotify ጫን";
+"sInstallerOsxMMHideOthers" = "ሌሎችን ደብቅ";
+"sInstallerOsxMMInstallSpotify" = "Spotifyን ጫን";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify እርዳታ ጫን";
+"sInstallerOsxMMMinimize" = "አሳንስ";
+"sInstallerOsxMMQuitInstallSpotify" = "ማቆም Spotify ጫን";
+"sInstallerOsxMMServices" = "አገልግሎቶች";
+"sInstallerOsxMMShowAll" = "ሁሉንም አሳይ";
+"sInstallerOsxMMWindow" = "መስኮት";
+"sInstallerOsxMMZoom" = "አጉላ";
+"sInstallerOsxMountFailedErrorDescription" = "የወረደውን የSpotify ዲስክ ምስል ለመጫን በመሞከር ላይ ሳለ አንድ ስህተት ተከስቷል።";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "አታንቀሳቀስ";
+"sInstallerOsxMoveApplicationButtonMove" = "ወደ የመተግበሪያዎች አቃፊ ውሰድ";
+"sInstallerOsxMoveApplicationCouldNotMove" = "ወደ መተግበሪያዎች አቃፊ መውሰድ አልተቻለም";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "ይህ የውርዶች አቃፊዎን ያልተዝረከረከ ያደርገዋል።";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "ለዚህ የአስተዳዳሪ የይለፍ ቃል የሚያስፈልግ መሆኑን ልብ ይበሉ።";
+"sInstallerOsxMoveApplicationQuestionMessage" = "ከፈለጉ ራሴን ወደ መተግበሪያ አቃፊ ማዛወር እችላለሁ።";
+"sInstallerOsxMoveApplicationQuestionTitle" = "ወደ መተግበሪያዎች አቃፊ ይወሰድ?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "በመነሻ አቃፊዎ ውስጥ ወደ የመተግበሪያዎች አቃፊ ይወሰድ?";
+"sInstallerOsxQuitButtonTitle" = "አቁም";
+"sInstallerOsxUnsupportedPlatformDesc" = "ይቅርታ፥ ይሄ የSpotify ስሪት ለmacOS %1$s ወይም ከዚያ በኋላ ላሉት ነው።";
+"sInstallerOsxUnsupportedPlatformHelp" = "ለድሮ ስሪቶች መጫኛዎችን ያግኙ";
+"sInstallerOsxUnsupportedPlatformTitle" = "የማይደገፍ መድረክ";

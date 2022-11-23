@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify skal have tilladelse til at installere.";
+"sInstallerOsxAskUserToQuitSpotify" = "Afslut Spotify, og prøv igen";
+"sInstallerOsxContinueInBackground" = "Fortsæt i baggrunden";
+"sInstallerOsxDownloadFailedErrorDescription" = "Der opstod en fejl under forsøget på at downloade Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Downloaden mislykkedes. Prøver igen om %1$d sek.";
+"sInstallerOsxDownloadingSpotify" = "Spotify downloades…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Der opstod en fejl under forsøget på at udpakke Spotify.";
+"sInstallerOsxGenericErrorDescription" = "Der opstod en fejl under forsøget på at installere Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Der opstod en fejl under forsøget på at installere Spotify.";
+"sInstallerOsxInstallationFailed" = "Installationen mislykkedes";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Download på Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Fortsæt installationen";
+"sInstallerOsxInstallationIncompleteDesc" = "Installationen af Spotify er næsten gennemført. Er du sikker på, at du vil afslutte?";
+"sInstallerOsxInstallationIncompleteTitle" = "Installationen er gennemført";
+"sInstallerOsxInstallingSpotify" = "Spotify installeres…";
+"sInstallerOsxMMAboutInstallSpotify" = "Om Installer Spotify";
+"sInstallerOsxMMBringAllToFront" = "Flyt alle forrest";
+"sInstallerOsxMMHelp" = "Hjælp";
+"sInstallerOsxMMHideInstallSpotify" = "Skjul Installer Spotify";
+"sInstallerOsxMMHideOthers" = "Skjul andre";
+"sInstallerOsxMMInstallSpotify" = "Installer Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Installer Spotify Help";
+"sInstallerOsxMMMinimize" = "Minimer";
+"sInstallerOsxMMQuitInstallSpotify" = "Afslut Installer Spotify";
+"sInstallerOsxMMServices" = "Tjenester";
+"sInstallerOsxMMShowAll" = "Vis alle";
+"sInstallerOsxMMWindow" = "Vindue";
+"sInstallerOsxMMZoom" = "Zoom";
+"sInstallerOsxMountFailedErrorDescription" = "Der opstod en fejl under forsøget på at installere det downloadede Spotify-diskbillede.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Flyt ikke";
+"sInstallerOsxMoveApplicationButtonMove" = "Flyt til mappen Programmer";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Kunne ikke flytte til mappen Programmer";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Dette hjælper dig med at holde orden i mappen Overførsler.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Bemærk, at dette kræver en administratoradgangskode.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Jeg kan flytte mig selv til mappen Programmer, hvis du vil have det.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Vil du flytte mig til mappen Programmer?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Vil du flytte til mappen Programmer under hjemmemappen?";
+"sInstallerOsxQuitButtonTitle" = "Afslut";
+"sInstallerOsxUnsupportedPlatformDesc" = "Denne version af Spotify kræver macOS %1$s eller nyere.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Find installationer til ældre versioner";
+"sInstallerOsxUnsupportedPlatformTitle" = "Ikke-understøttet platform";

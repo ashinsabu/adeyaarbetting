@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify potrebuje povolenie na inštaláciu.";
+"sInstallerOsxAskUserToQuitSpotify" = "Ukonči Spotify a skús to znova";
+"sInstallerOsxContinueInBackground" = "Pokračovať na pozadí";
+"sInstallerOsxDownloadFailedErrorDescription" = "Pri pokuse o stiahnutie Spotify sa vyskytla chyba.";
+"sInstallerOsxDownloadFailedRetryIn" = "Sťahovanie zlyhalo. Pokus sa zopakuje o %1$d s.";
+"sInstallerOsxDownloadingSpotify" = "Sťahuje sa Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Pri pokuse o extrahovanie Spotify sa vyskytla chyba.";
+"sInstallerOsxGenericErrorDescription" = "Pri pokuse o inštaláciu Spotify sa vyskytla chyba.";
+"sInstallerOsxInstallFailedErrorDescription" = "Pri pokuse o inštaláciu Spotify sa vyskytla chyba.";
+"sInstallerOsxInstallationFailed" = "Inštalácia zlyhala";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Stiahnuť zo Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Pokračovať v inštalácii";
+"sInstallerOsxInstallationIncompleteDesc" = "Inštalácia Spotify je takmer dokončená. Naozaj chceš skončiť?";
+"sInstallerOsxInstallationIncompleteTitle" = "Inštalácia nie je dokončená";
+"sInstallerOsxInstallingSpotify" = "Inštaluje sa Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "O apke Inštalácia Spotify";
+"sInstallerOsxMMBringAllToFront" = "Presunúť všetko dopredu";
+"sInstallerOsxMMHelp" = "Pomocník";
+"sInstallerOsxMMHideInstallSpotify" = "Skryť apku Inštalácia Spotify";
+"sInstallerOsxMMHideOthers" = "Skryť ostatné";
+"sInstallerOsxMMInstallSpotify" = "Inštalácia Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Pomoc s inštaláciou Spotify";
+"sInstallerOsxMMMinimize" = "Minimalizovať";
+"sInstallerOsxMMQuitInstallSpotify" = "Ukončiť apku Inštalácia Spotify";
+"sInstallerOsxMMServices" = "Služby";
+"sInstallerOsxMMShowAll" = "Zobraziť všetko";
+"sInstallerOsxMMWindow" = "Okno";
+"sInstallerOsxMMZoom" = "Zmena veľkosti";
+"sInstallerOsxMountFailedErrorDescription" = "Pri pokuse o pripojenie stiahnutého obrazu disku Spotify sa vyskytla chyba.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Nepresúvať";
+"sInstallerOsxMoveApplicationButtonMove" = "Presunúť do priečinka Aplikácie";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Presunutie do priečinka Aplikácie sa nepodarilo";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Priečinok Stiahnuté tak zostane prehľadný.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Upozorňujeme, že táto operácia bude vyžadovať heslo správcu.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Ak chceš, môžem sa presunúť do priečinka Aplikácie.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Presunúť do priečinka Aplikácie?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Presunúť do priečinka Aplikácie v domovskom priečinku?";
+"sInstallerOsxQuitButtonTitle" = "Skončiť";
+"sInstallerOsxUnsupportedPlatformDesc" = "Ľutujeme, táto verzia Spotify je určená pre macOS %1$s alebo novší.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Nájsť inštalátory starších verzií";
+"sInstallerOsxUnsupportedPlatformTitle" = "Nepodporovaná platforma";

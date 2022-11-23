@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "„Spotify“ reikia leidimo diegti.";
+"sInstallerOsxAskUserToQuitSpotify" = "Išeik iš „Spotify“ ir bandyk dar kartą";
+"sInstallerOsxContinueInBackground" = "Tęsti fone";
+"sInstallerOsxDownloadFailedErrorDescription" = "Atsisiunčiant „Spotify“ įvyko klaida.";
+"sInstallerOsxDownloadFailedRetryIn" = "Atsisiųsti nepavyko. Kartojama po %1$d sek.";
+"sInstallerOsxDownloadingSpotify" = "„Spotify“ atsisiunčiama…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Išskleidžiant „Spotify“ įvyko klaida.";
+"sInstallerOsxGenericErrorDescription" = "Diegiant „Spotify“ įvyko klaida.";
+"sInstallerOsxInstallFailedErrorDescription" = "Diegiant „Spotify“ įvyko klaida.";
+"sInstallerOsxInstallationFailed" = "Įdiegti nepavyko";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Atsisiųsti iš Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Diegti toliau";
+"sInstallerOsxInstallationIncompleteDesc" = "„Spotify“ beveik įdiegta. Tikrai nori išeiti?";
+"sInstallerOsxInstallationIncompleteTitle" = "Diegimas baigtas";
+"sInstallerOsxInstallingSpotify" = "„Spotify“ diegiama…";
+"sInstallerOsxMMAboutInstallSpotify" = "Apie „Spotify“ diegimą";
+"sInstallerOsxMMBringAllToFront" = "Atidaryti viską";
+"sInstallerOsxMMHelp" = "Žinynas";
+"sInstallerOsxMMHideInstallSpotify" = "Slėpti „Spotify“ diegimą";
+"sInstallerOsxMMHideOthers" = "Slėpti kitus";
+"sInstallerOsxMMInstallSpotify" = "„Spotify“ diegimas";
+"sInstallerOsxMMInstallSpotifyHelp" = "Įdiegti „Spotify Help“";
+"sInstallerOsxMMMinimize" = "Sumažinti";
+"sInstallerOsxMMQuitInstallSpotify" = "Išeiti iš „Spotify“ diegimo";
+"sInstallerOsxMMServices" = "Paslaugos";
+"sInstallerOsxMMShowAll" = "Rodyti viską";
+"sInstallerOsxMMWindow" = "Langas";
+"sInstallerOsxMMZoom" = "Keisti mastelį";
+"sInstallerOsxMountFailedErrorDescription" = "Bandant įkelti atsisiųstą „Spotify“ disko vaizdą, įvyko klaida.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Neperkelti";
+"sInstallerOsxMoveApplicationButtonMove" = "Perkelti į aplanką „Programėlės“";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Nepavyko perkelti į aplanką „Programėlės“";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Taip aplanke „Atsisiuntimai“ išvengsi netvarkos.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Atkreipk dėmesį, kad tam reikės administratoriaus slaptažodžio.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Jei nori, galiu persikelti į aplanką „Programėlės“.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Perkelti į aplanką „Programėlės“?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Perkelti į aplanką „Programėlės“ tavo pagrindiniame aplanke?";
+"sInstallerOsxQuitButtonTitle" = "Išeiti";
+"sInstallerOsxUnsupportedPlatformDesc" = "Deja, ši „Spotify“ versija skirta „macOS“ %1$s ar naujesnei versijai.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Ieškok senesnių diegimo programos versijų";
+"sInstallerOsxUnsupportedPlatformTitle" = "Nepalaikoma platforma";

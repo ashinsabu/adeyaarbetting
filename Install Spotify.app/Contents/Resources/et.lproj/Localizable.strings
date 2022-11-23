@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify vajab installimiseks luba.";
+"sInstallerOsxAskUserToQuitSpotify" = "Sule Spotify ja proovi uuesti";
+"sInstallerOsxContinueInBackground" = "Jätka taustal";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify allalaadimisel ilmnes tõrge.";
+"sInstallerOsxDownloadFailedRetryIn" = "Allalaadimine nurjus. Proovime uuesti %1$d s pärast.";
+"sInstallerOsxDownloadingSpotify" = "Spotify allalaadimine…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify lahtipakkimisel ilmnes tõrge.";
+"sInstallerOsxGenericErrorDescription" = "Spotify installimisel ilmnes tõrge.";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotify installimisel ilmnes tõrge.";
+"sInstallerOsxInstallationFailed" = "Installimine nurjus";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Laadi alla saidilt Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Jätka installimist";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify installimine on peaaegu lõpule jõudnud. Kas soovid tõesti sulgeda?";
+"sInstallerOsxInstallationIncompleteTitle" = "Installimine lõpetamata";
+"sInstallerOsxInstallingSpotify" = "Spotify installimine…";
+"sInstallerOsxMMAboutInstallSpotify" = "Teave Spotify installimise kohta";
+"sInstallerOsxMMBringAllToFront" = "Too kõik ette";
+"sInstallerOsxMMHelp" = "Spikker";
+"sInstallerOsxMMHideInstallSpotify" = "Peida Spotify installimine";
+"sInstallerOsxMMHideOthers" = "Peida muud";
+"sInstallerOsxMMInstallSpotify" = "Spotify installimine";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify installimise spikker";
+"sInstallerOsxMMMinimize" = "Minimeeri";
+"sInstallerOsxMMQuitInstallSpotify" = "Sule Spotify installimine";
+"sInstallerOsxMMServices" = "Teenused";
+"sInstallerOsxMMShowAll" = "Kuva kõik";
+"sInstallerOsxMMWindow" = "Aken";
+"sInstallerOsxMMZoom" = "Suum";
+"sInstallerOsxMountFailedErrorDescription" = "Allalaaditud Spotify kettatõmmise installimisel ilmnes tõrge.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Ära teisalda";
+"sInstallerOsxMoveApplicationButtonMove" = "Teisalda rakenduste kausta";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Rakenduste kausta ei saanud teisaldada";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Nii püsib sinu allalaadimiste kaust korras.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Võta arvesse, et selleks on vaja administraatori parooli.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Soovi korral võin ise teisaldada end rakenduste kausta.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Kas teisaldada rakenduste kausta?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Kas teisaldada avalehel rakenduste kausta?";
+"sInstallerOsxQuitButtonTitle" = "Sule";
+"sInstallerOsxUnsupportedPlatformDesc" = "Kahjuks on see Spotify versioon mõeldud macOS %1$s või uuema versiooni jaoks.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Otsi vanemate versioonide installiprogramme";
+"sInstallerOsxUnsupportedPlatformTitle" = "Toetuseta platvorm";

@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify потрібен дозвіл на встановлення.";
+"sInstallerOsxAskUserToQuitSpotify" = "Закрийте Spotify і спробуйте знову";
+"sInstallerOsxContinueInBackground" = "Продовжити у фоновому режимі";
+"sInstallerOsxDownloadFailedErrorDescription" = "Під час завантаження Spotify сталася помилка.";
+"sInstallerOsxDownloadFailedRetryIn" = "Помилка завантаження. Повторна спроба відбудеться через %1$d с.";
+"sInstallerOsxDownloadingSpotify" = "Завантаження Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Під час розпакування файлу Spotify сталася помилка.";
+"sInstallerOsxGenericErrorDescription" = "Не вдалося встановити Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Не вдалося встановити Spotify.";
+"sInstallerOsxInstallationFailed" = "Помилка встановлення";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Завантажити із сайту Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Продовжити встановлення";
+"sInstallerOsxInstallationIncompleteDesc" = "Установлення Spotify майже завершено. Дійсно закрити?";
+"sInstallerOsxInstallationIncompleteTitle" = "Установлення не завершено";
+"sInstallerOsxInstallingSpotify" = "Установлення Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Про інсталяційний файл Spotify";
+"sInstallerOsxMMBringAllToFront" = "Усе на передній план";
+"sInstallerOsxMMHelp" = "Довідка";
+"sInstallerOsxMMHideInstallSpotify" = "Приховати інсталяційний файл Spotify";
+"sInstallerOsxMMHideOthers" = "Приховати інші служби";
+"sInstallerOsxMMInstallSpotify" = "Інсталяційний файл Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Довідка щодо інсталяційного файлу Spotify";
+"sInstallerOsxMMMinimize" = "Згорнути";
+"sInstallerOsxMMQuitInstallSpotify" = "Закрити інсталяційний файл Spotify";
+"sInstallerOsxMMServices" = "Служби";
+"sInstallerOsxMMShowAll" = "Показати всі служби";
+"sInstallerOsxMMWindow" = "Вікно";
+"sInstallerOsxMMZoom" = "Розгорнути";
+"sInstallerOsxMountFailedErrorDescription" = "Під час підключення завантаженого образу диска Spotify сталася помилка.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Не переміщувати";
+"sInstallerOsxMoveApplicationButtonMove" = "Перемістити до папки \"Додатки\"";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Не вдалося перемістити до папки \"Додатки\"";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Це дасть змогу не захаращувати папку \"Завантаження\".";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Зауважте, що для цього потрібен пароль адміністратора.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "За вашої згоди можливе автоматичне переміщення до папки \"Додатки\".";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Перемісти до папки \"Додатки\"?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Перемістити до папки \"Додатки\" у вашій папці головної сторінки?";
+"sInstallerOsxQuitButtonTitle" = "Закрити";
+"sInstallerOsxUnsupportedPlatformDesc" = "На жаль, ця версія Spotify призначена для macOS %1$s або новішої версії.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Знайти файли для встановлення попередніх версій";
+"sInstallerOsxUnsupportedPlatformTitle" = "Непідтримувана платформа";

@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Aplicația Spotify are nevoie de permisiuni pentru instalare.";
+"sInstallerOsxAskUserToQuitSpotify" = "Părăsește aplicația Spotify și încearcă din nou";
+"sInstallerOsxContinueInBackground" = "Continuă în fundal";
+"sInstallerOsxDownloadFailedErrorDescription" = "A apărut o eroare la descărcarea aplicației Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Descărcarea nu a reușit. Se încearcă din nou în %1$d s.";
+"sInstallerOsxDownloadingSpotify" = "Se descarcă Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "A apărut o eroare la extragerea aplicației Spotify.";
+"sInstallerOsxGenericErrorDescription" = "A apărut o eroare la instalarea aplicației Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "A apărut o eroare la instalarea aplicației Spotify.";
+"sInstallerOsxInstallationFailed" = "Instalarea nu a reușit";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Descarcă de pe Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Continuă instalarea";
+"sInstallerOsxInstallationIncompleteDesc" = "Instalarea aplicației Spotify este aproape finalizată. Sigur dorești să părăsești?";
+"sInstallerOsxInstallationIncompleteTitle" = "Instalarea este incompletă";
+"sInstallerOsxInstallingSpotify" = "Se instalează Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Despre instalarea Spotify";
+"sInstallerOsxMMBringAllToFront" = "Afișează în față";
+"sInstallerOsxMMHelp" = "Asistență";
+"sInstallerOsxMMHideInstallSpotify" = "Ascunde instalarea Spotify";
+"sInstallerOsxMMHideOthers" = "Ascunde altele";
+"sInstallerOsxMMInstallSpotify" = "Instalează Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Asistență cu instalarea Spotify";
+"sInstallerOsxMMMinimize" = "Minimizează";
+"sInstallerOsxMMQuitInstallSpotify" = "Părăsește instalarea Spotify";
+"sInstallerOsxMMServices" = "Servicii";
+"sInstallerOsxMMShowAll" = "Afișează toate";
+"sInstallerOsxMMWindow" = "Fereastră";
+"sInstallerOsxMMZoom" = "Zoom";
+"sInstallerOsxMountFailedErrorDescription" = "A apărut o eroare la montarea imaginii pentru discul Spotify descărcat.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Nu muta";
+"sInstallerOsxMoveApplicationButtonMove" = "Mută în folderul Aplicații";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Nu se poate muta în folderul Aplicații";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Astfel, vei evita aglomerarea folderului Descărcări.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Reține că această acțiune va necesita o parolă de administrator.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Dacă dorești, mă pot muta automat în folderul Aplicații.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Muți în folderul Aplicații?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Muți în folderul Aplicații aflat în folderul Acasă?";
+"sInstallerOsxQuitButtonTitle" = "Părăsește";
+"sInstallerOsxUnsupportedPlatformDesc" = "Ne pare rău, această versiune de Spotify necesită macOS %1$s sau versiuni mai recente.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Caută programe de instalare pentru versiuni mai vechi";
+"sInstallerOsxUnsupportedPlatformTitle" = "Platformă neacceptată";

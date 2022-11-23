@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "நிறுவ Spotifyக்கு அனுமதி தேவை.";
+"sInstallerOsxAskUserToQuitSpotify" = "Spotifyயில் இருந்து வெளியேறிவிட்டு மீண்டும் முயலவும்";
+"sInstallerOsxContinueInBackground" = "பின்னணியில் தொடர்க";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotifyயைப் பதிவிறக்கும்போது பிழை ஏற்பட்டது.";
+"sInstallerOsxDownloadFailedRetryIn" = "பதிவிறக்க முடியவில்லை. %1$d வினாடிகளில் மீண்டும் முயலும்.";
+"sInstallerOsxDownloadingSpotify" = "Spotifyயைப் பதிவிறக்குகிறது…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotifyயை எக்ஸ்ட்ராக்ட் செய்யும்போது பிழை ஏற்பட்டது.";
+"sInstallerOsxGenericErrorDescription" = "Spotifyயை நிறுவும்போது பிழை ஏற்பட்டது.";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotifyயை நிறுவும்போது பிழை ஏற்பட்டது.";
+"sInstallerOsxInstallationFailed" = "நிறுவ முடியவில்லை";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com தளத்தில் இருந்து பதிவிறக்கு";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "நிறுவலைத் தொடர்க";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify நிறுவல் நிறைவடையப்போகிறது. நீங்கள் நிச்சயமாக வெளியேற விரும்புகிறீர்களா?";
+"sInstallerOsxInstallationIncompleteTitle" = "நிறுவல் நிறைவடையவில்லை";
+"sInstallerOsxInstallingSpotify" = "Spotifyயை நிறுவுகிறது…";
+"sInstallerOsxMMAboutInstallSpotify" = "Spotify நிறுவல் பற்றிய அறிமுகம்";
+"sInstallerOsxMMBringAllToFront" = "அனைத்தையும் முன்னால் கொண்டுவருக";
+"sInstallerOsxMMHelp" = "உதவி";
+"sInstallerOsxMMHideInstallSpotify" = "Spotify நிறுவலை மறை";
+"sInstallerOsxMMHideOthers" = "மற்றவற்றை மறை";
+"sInstallerOsxMMInstallSpotify" = "Spotify நிறுவல்";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify Help நிறுவு";
+"sInstallerOsxMMMinimize" = "சிறிதாக்கு";
+"sInstallerOsxMMQuitInstallSpotify" = "Spotify நிறுவலில் இருந்து வெளியேறு";
+"sInstallerOsxMMServices" = "சேவைகள்";
+"sInstallerOsxMMShowAll" = "அனைத்தையும் காட்டு";
+"sInstallerOsxMMWindow" = "சாளரம்";
+"sInstallerOsxMMZoom" = "அளவை மாற்று";
+"sInstallerOsxMountFailedErrorDescription" = "பதிவிறக்கப்பட்ட Spotify டிஸ்க் இமேஜை இணைப்பதில் பிழை ஏற்பட்டது.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "நகர்த்த வேண்டாம்";
+"sInstallerOsxMoveApplicationButtonMove" = "செயலிகள் கோப்புறைக்கு நகர்த்து";
+"sInstallerOsxMoveApplicationCouldNotMove" = "செயலிகள் கோப்புறைக்கு நகர்த்த முடியவில்லை";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "இது உங்கள் பதிவிறக்கங்கள் கோப்புறையை நேர்த்தியாக வைத்திருக்கும்.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "இதற்கு நிர்வாகியின் கடவுச்சொல் தேவைப்படும் என்பதை நினைவில் கொள்ளுங்கள்.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "நீங்கள் விரும்பினால் செயலிகள் கோப்புறைக்கு நானே நகர்த்துவேன்.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "செயலிகள் கோப்புறைக்கு நகர்த்தவா?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "உங்கள் முகப்புக் கோப்புறையில் உள்ள செயலிகள் கோப்புறைக்கு நகர்த்தவா?";
+"sInstallerOsxQuitButtonTitle" = "வெளியேறு";
+"sInstallerOsxUnsupportedPlatformDesc" = "Spotifyயின் இந்தப் பதிப்பு macOS %1$s அல்லது அதற்குப் பிந்தைய பதிப்புகளுக்கானது.";
+"sInstallerOsxUnsupportedPlatformHelp" = "பழைய பதிப்புகளுக்கான நிறுவிகளைக் கண்டறி";
+"sInstallerOsxUnsupportedPlatformTitle" = "ஆதரிக்கப்படாத தளம்";

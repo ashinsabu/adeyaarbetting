@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify benötigt zum Installieren eine Genehmigung.";
+"sInstallerOsxAskUserToQuitSpotify" = "Beende Spotify und versuche es erneut";
+"sInstallerOsxContinueInBackground" = "Im Hintergrund fortfahren";
+"sInstallerOsxDownloadFailedErrorDescription" = "Während Spotify heruntergeladen wurde, ist ein Fehler aufgetreten.";
+"sInstallerOsxDownloadFailedRetryIn" = "Download fehlgeschlagen. Neuer Versuch in %1$d s.";
+"sInstallerOsxDownloadingSpotify" = "Spotify wird heruntergeladen …";
+"sInstallerOsxExtractionFailedErrorDescription" = "Beim Extrahieren von Spotify ist ein Fehler aufgetreten.";
+"sInstallerOsxGenericErrorDescription" = "Während der Installation von Spotify ist ein Fehler aufgetreten.";
+"sInstallerOsxInstallFailedErrorDescription" = "Während der Installation von Spotify ist ein Fehler aufgetreten.";
+"sInstallerOsxInstallationFailed" = "Installation fehlgeschlagen";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Von Spotify.com herunterladen";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Installation fortsetzen";
+"sInstallerOsxInstallationIncompleteDesc" = "Die Installation von Spotify ist fast abgeschlossen. Möchtest Du sie wirklich abbrechen?";
+"sInstallerOsxInstallationIncompleteTitle" = "Installation fehlerhaft";
+"sInstallerOsxInstallingSpotify" = "Spotify wird installiert…";
+"sInstallerOsxMMAboutInstallSpotify" = "Über Install Spotify";
+"sInstallerOsxMMBringAllToFront" = "Alle Fenster anzeigen";
+"sInstallerOsxMMHelp" = "Hilfe";
+"sInstallerOsxMMHideInstallSpotify" = "Install Spotify ausblenden";
+"sInstallerOsxMMHideOthers" = "Andere ausblenden";
+"sInstallerOsxMMInstallSpotify" = "Install Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Hilfe beim Installieren von Spotify";
+"sInstallerOsxMMMinimize" = "Im Dock ablegen";
+"sInstallerOsxMMQuitInstallSpotify" = "Install Spotify beenden";
+"sInstallerOsxMMServices" = "Dienste";
+"sInstallerOsxMMShowAll" = "Alle Einblenden";
+"sInstallerOsxMMWindow" = "Fenster";
+"sInstallerOsxMMZoom" = "Zoomen";
+"sInstallerOsxMountFailedErrorDescription" = "Während das heruntergeladene Spotify Image aktiviert wurde, ist ein Fehler aufgetreten.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Nicht verschieben";
+"sInstallerOsxMoveApplicationButtonMove" = "In den Anwendungsordner verschieben";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Verschieben in Anwendungsordner nicht möglich";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "So hältst du Ordnung in deinem Downloads-Ordner.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Dafür ist ein Administratorkennwort erforderlich.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Wenn Du möchtest, kann ich mich selbst in den Anwendungsordner verschieben.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "In Anwendungsordner verschieben?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "In Anwendungsordner unter „Benutzer“ verschieben?";
+"sInstallerOsxQuitButtonTitle" = "Beenden";
+"sInstallerOsxUnsupportedPlatformDesc" = "Sorry, diese Version von Spotify funktioniert nur mit macOS %1$s oder neuer.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Installer für ältere Versionen suchen";
+"sInstallerOsxUnsupportedPlatformTitle" = "Nicht unterstützte Plattform";

@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "‏Spotify کو انسٹال کرنے کیلئے اجازت کی ضرورت ہے۔";
+"sInstallerOsxAskUserToQuitSpotify" = "براہ کرم Spotify بند کریں اور دوبارہ کوشش کریں";
+"sInstallerOsxContinueInBackground" = "پس منظر میں جاری رکھیں";
+"sInstallerOsxDownloadFailedErrorDescription" = "‏Spotify ڈاؤن لوڈ کرنے میں کچھ خرابی پیش آگئی۔";
+"sInstallerOsxDownloadFailedRetryIn" = "ڈاؤن لوڈ میں ناکامی۔ ‏%1$d سیکنڈ میں دوبارہ کوشش کی جائے گی۔";
+"sInstallerOsxDownloadingSpotify" = "‏Spotify ڈاؤن لوڈ ہو رہی ہے…";
+"sInstallerOsxExtractionFailedErrorDescription" = "‏Spotify کو حاصل کرنے میں کچھ خرابی پیش آگئی۔";
+"sInstallerOsxGenericErrorDescription" = "‏Spotify انسٹال کرنے میں کچھ خرابی پیش آگئی۔";
+"sInstallerOsxInstallFailedErrorDescription" = "‏Spotify انسٹال کرنے میں کچھ خرابی پیش آگئی۔";
+"sInstallerOsxInstallationFailed" = "انسٹالیشن ناکام ہوگئی";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "‏Spotify.com سے ڈاؤن لوڈ کریں";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "انسٹالیشن جاری رکھیں";
+"sInstallerOsxInstallationIncompleteDesc" = "‏Spotify کی انسٹالیشن تقریباً مکمل ہوگئی ہے۔ کیا آپ واقعی بند کرنا چاہتے ہیں؟";
+"sInstallerOsxInstallationIncompleteTitle" = "انسٹالیشن مکمل نہیں ہوئی";
+"sInstallerOsxInstallingSpotify" = "‏Spotify انسٹال ہو رہی ہے…";
+"sInstallerOsxMMAboutInstallSpotify" = "‏Spotify انسٹال کرنے کے بارے میں";
+"sInstallerOsxMMBringAllToFront" = "سبھی کو سامنے لائیں";
+"sInstallerOsxMMHelp" = "مدد";
+"sInstallerOsxMMHideInstallSpotify" = "‏Spotify انسٹال کریں کو چھپائیں";
+"sInstallerOsxMMHideOthers" = "دیگر کو چھپائیں";
+"sInstallerOsxMMInstallSpotify" = "‏Spotify انسٹال کریں";
+"sInstallerOsxMMInstallSpotifyHelp" = "‏Spotify مدد انسٹال کریں";
+"sInstallerOsxMMMinimize" = "چھوٹا کریں";
+"sInstallerOsxMMQuitInstallSpotify" = "‏Spotify انسٹال کریں کو بند کریں";
+"sInstallerOsxMMServices" = "سروسز";
+"sInstallerOsxMMShowAll" = "سبھی دکھائیں";
+"sInstallerOsxMMWindow" = "ونڈو";
+"sInstallerOsxMMZoom" = "زوم کریں";
+"sInstallerOsxMountFailedErrorDescription" = "ڈاؤن لوڈ کردہ Spotify ڈسک تصویر کو ماؤنٹ کرنے کی کوشش میں کچھ خرابی پیش آگئی۔";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "منتقل نہ کریں";
+"sInstallerOsxMoveApplicationButtonMove" = "ایپلیکیشنز فولڈر میں منتقل کریں";
+"sInstallerOsxMoveApplicationCouldNotMove" = "ایپلیکیشنز فولڈر میں منتقل نہیں کیا جا سکا";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "اس سے آپ کا ڈاؤن لوڈز فولڈر باترتیب رہے گا۔";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "نوٹ کریں کہ اس کیلئے ایڈمنسٹریٹر پاس ورڈ درکار ہوگا۔";
+"sInstallerOsxMoveApplicationQuestionMessage" = "اگر آپ چاہیں تو میں خود کو ایپلیکیشنز فولڈر میں منتقل کر سکتا/سکتی ہوں۔";
+"sInstallerOsxMoveApplicationQuestionTitle" = "ایپلیکیشنز فولڈر میں منتقل کریں؟";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "اپنے ہوم فولڈر میں ایپلیکیشنز فولڈر پر منتقل کریں؟";
+"sInstallerOsxQuitButtonTitle" = "بند کریں";
+"sInstallerOsxUnsupportedPlatformDesc" = "معذرت، Spotify کا یہ ورژن macOS %1$s یا اس سے نئے ورژن کیلئے ہے۔";
+"sInstallerOsxUnsupportedPlatformHelp" = "پرانے ورژنز کیلئے انسٹالرز تلاش کریں";
+"sInstallerOsxUnsupportedPlatformTitle" = "غیر تعاون یافتہ پلیٹ فارم";

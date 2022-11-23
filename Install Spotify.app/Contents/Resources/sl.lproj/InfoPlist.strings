@@ -1,0 +1,9 @@
+/*
+  InfoPlist.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"CFBundleDisplayName" = "Namestitveni program za Spotify";
+"CFBundleName" = "Namestitveni program za Spotify";

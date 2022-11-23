@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ।";
+"sInstallerOsxAskUserToQuitSpotify" = "ਕਿਰਪਾ ਕਰਕੇ Spotify ਬੰਦ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
+"sInstallerOsxContinueInBackground" = "ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਜਾਰੀ ਰੱਖੋ";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਦੌਰਾਨ ਕੋਈ ਗੜਬੜੀ ਪੇਸ਼ ਆਈ ਹੈ।";
+"sInstallerOsxDownloadFailedRetryIn" = "ਡਾਊਨਲੋਡ ਕਰਨਾ ਅਸਫ਼ਲ ਰਿਹਾ। %1$d ਸਕਿੰਟ ਵਿੱਚ ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾਵੇਗੀ।";
+"sInstallerOsxDownloadingSpotify" = "Spotify ਨੂੰ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify ਨੂੰ ਐਕਸਟ੍ਰੈਕਟ ਕਰਨ ਦੌਰਾਨ ਕੋਈ ਗੜਬੜੀ ਪੇਸ਼ ਆਈ ਹੈ।";
+"sInstallerOsxGenericErrorDescription" = "Spotify ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਦੌਰਾਨ ਕੋਈ ਗੜਬੜੀ ਪੇਸ਼ ਆਈ ਹੈ।";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotify ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਦੌਰਾਨ ਕੋਈ ਗੜਬੜੀ ਪੇਸ਼ ਆਈ ਹੈ।";
+"sInstallerOsxInstallationFailed" = "ਇੰਸਟਾਲ ਕਰਨਾ ਅਸਫ਼ਲ ਰਿਹਾ";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "ਇੰਸਟਾਲ ਕਰਨਾ ਜਾਰੀ ਰੱਖੋ";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify ਲਗਭਗ ਇੰਸਟਾਲ ਹੋ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਪੱਕਾ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?";
+"sInstallerOsxInstallationIncompleteTitle" = "ਇੰਸਟਾਲੇਸ਼ਨ ਪ੍ਰਕਿਰਿਆ ਪੂਰੀ ਨਹੀਂ ਹੋਈ";
+"sInstallerOsxInstallingSpotify" = "Spotify ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…";
+"sInstallerOsxMMAboutInstallSpotify" = "'Spotify ਇੰਸਟਾਲ ਕਰੋ' ਬਾਰੇ";
+"sInstallerOsxMMBringAllToFront" = "ਸਭ ਕੁਝ ਸਾਹਮਣੇ ਲਿਆਓ";
+"sInstallerOsxMMHelp" = "ਮਦਦ";
+"sInstallerOsxMMHideInstallSpotify" = "'Spotify ਇੰਸਟਾਲ ਕਰੋ' ਨੂੰ ਛੁਪਾਓ";
+"sInstallerOsxMMHideOthers" = "ਹੋਰਾਂ ਨੂੰ ਛੁਪਾਓ";
+"sInstallerOsxMMInstallSpotify" = "Spotify ਇੰਸਟਾਲ ਕਰੋ";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify ਇੰਸਟਾਲ ਕਰਨ ਸੰਬੰਧੀ ਮਦਦ";
+"sInstallerOsxMMMinimize" = "ਛੋਟਾ ਕਰੋ";
+"sInstallerOsxMMQuitInstallSpotify" = "Spotify ਇੰਸਟਾਲ ਕਰਨਾ ਬੰਦ ਕਰੋ";
+"sInstallerOsxMMServices" = "ਸੇਵਾਵਾਂ";
+"sInstallerOsxMMShowAll" = "ਸਭ ਦਿਖਾਓ";
+"sInstallerOsxMMWindow" = "ਵਿੰਡੋ";
+"sInstallerOsxMMZoom" = "ਜ਼ੂਮ";
+"sInstallerOsxMountFailedErrorDescription" = "ਡਾਊਨਲੋਡ ਕੀਤੀ ਹੋਈ Spotify ਡਿਸਕ ਇਮੇਜ਼ ਨੂੰ ਮਾਊਂਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਦੌਰਾਨ ਕੋਈ ਗੜਬੜੀ ਪੇਸ਼ ਆਈ ਹੈ।";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "ਨਾ ਲਿਜਾਓ";
+"sInstallerOsxMoveApplicationButtonMove" = "ਐਪਲੀਕੇਸ਼ਨ ਫੋਲਡਰ ਵਿੱਚ ਲਿਜਾਓ";
+"sInstallerOsxMoveApplicationCouldNotMove" = "ਐਪਲੀਕੇਸ਼ਨ ਫੋਲਡਰ ਵਿੱਚ ਨਹੀਂ ਲਿਜਾਇਆ ਜਾ ਸਕਿਆ";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "ਇਸ ਨਾਲ ਤੁਹਾਡੇ 'ਡਾਊਨਲੋਡ' ਫੋਲਡਰ ਵਿੱਚ ਘੜਮੱਸ ਨਹੀਂ ਪਵੇਗਾ।";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "ਨੋਟ ਕਰੋ ਕਿ ਇਸ ਲਈ ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਪਾਸਵਰਡ ਦੀ ਲੋੜ ਪਵੇਗੀ।";
+"sInstallerOsxMoveApplicationQuestionMessage" = "ਜੇ ਤੁਸੀਂ ਚਾਹੋਂ ਤਾਂ Spotify ਖੁਦ ਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਫੋਲਡਰ ਵਿੱਚ ਲਿਜਾ ਸਕਦਾ ਹੈ।";
+"sInstallerOsxMoveApplicationQuestionTitle" = "ਕੀ ਐਪਲੀਕੇਸ਼ਨ ਫੋਲਡਰ ਵਿੱਚ ਲਿਜਾਉਣਾ ਹੈ?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "ਕੀ ਤੁਹਾਡੇ ਹੋਮ ਫੋਲਡਰ ਵਿਚਲੇ ਐਪਲੀਕੇਸ਼ਨ ਫੋਲਡਰ ਵਿੱਚ ਲਿਜਾਉਣਾ ਹੈ?";
+"sInstallerOsxQuitButtonTitle" = "ਬੰਦ ਕਰੋ";
+"sInstallerOsxUnsupportedPlatformDesc" = "ਮਾਫ਼ ਕਰਨਾ, Spotify ਦਾ ਇਹ ਵਰਜਨ macOS %1$s ਜਾਂ ਇਸ ਤੋਂ ਨਵੇਂ ਵਰਜਨ ਲਈ ਹੈ।";
+"sInstallerOsxUnsupportedPlatformHelp" = "ਪੁਰਾਣੇ ਵਰਜਨ ਲਈ ਇੰਸਟਾਲਰ ਲੱਭੋ";
+"sInstallerOsxUnsupportedPlatformTitle" = "ਅਸਮਰਥਿਤ ਪਲੇਟਫਾਰਮ";

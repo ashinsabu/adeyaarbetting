@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify tarvitsee luvan asennusta varten.";
+"sInstallerOsxAskUserToQuitSpotify" = "Sulje Spotify ja yritä uudelleen";
+"sInstallerOsxContinueInBackground" = "Jatka taustalla";
+"sInstallerOsxDownloadFailedErrorDescription" = "Virhe Spotifyn lataamisessa.";
+"sInstallerOsxDownloadFailedRetryIn" = "Lataus epäonnistui. Uusi yritys %1$d s kuluttua.";
+"sInstallerOsxDownloadingSpotify" = "Ladataan Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Virhe Spotifyn poiminnassa.";
+"sInstallerOsxGenericErrorDescription" = "Virhe Spotifyn asennuksessa.";
+"sInstallerOsxInstallFailedErrorDescription" = "Virhe Spotifyn asennuksessa.";
+"sInstallerOsxInstallationFailed" = "Asennus epäonnistui";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Lataa osoitteesta Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Jatka asennusta";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotifyn asennus on melkein valmis. Haluatko varmasti lopettaa?";
+"sInstallerOsxInstallationIncompleteTitle" = "Asennus kesken";
+"sInstallerOsxInstallingSpotify" = "Asennetaan Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Tietoja Spotifyn asentamisesta";
+"sInstallerOsxMMBringAllToFront" = "Tuo kaikki kohteet eteen";
+"sInstallerOsxMMHelp" = "Ohjeet";
+"sInstallerOsxMMHideInstallSpotify" = "Piilota Spotifyn asennusohjelma";
+"sInstallerOsxMMHideOthers" = "Piilota muut";
+"sInstallerOsxMMInstallSpotify" = "Asenna Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Asenna Spotify-ohjeet";
+"sInstallerOsxMMMinimize" = "Pienennä";
+"sInstallerOsxMMQuitInstallSpotify" = "Lopeta Spotifyn asentaminen";
+"sInstallerOsxMMServices" = "Palvelut";
+"sInstallerOsxMMShowAll" = "Näytä kaikki";
+"sInstallerOsxMMWindow" = "Ikkuna";
+"sInstallerOsxMMZoom" = "Zoomaa";
+"sInstallerOsxMountFailedErrorDescription" = "Virhe ladatun Spotify-sisällön käyttöönotossa.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Älä siirrä";
+"sInstallerOsxMoveApplicationButtonMove" = "Siirrä Sovellukset-kansioon";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Siirto Sovellukset-kansioon ei onnistunut";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Näin pidät Lataukset-kansion sisällön järjestyksessä.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Tämä vaatii järjestelmänvalvojan salasanan.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Voin siirtyä Sovellukset-kansioon, jos haluat.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Siirretäänkö Sovellukset-kansioon?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Siirretäänkö Koti-kansion Sovellukset-kansioon?";
+"sInstallerOsxQuitButtonTitle" = "Lopeta";
+"sInstallerOsxUnsupportedPlatformDesc" = "Tämä Spotify‑versio on käytettävissä macOS‑versiossa %1$s ja sitä uudemmissa.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Etsi asennusohjelmia vanhemmille versioille";
+"sInstallerOsxUnsupportedPlatformTitle" = "Käyttöympäristöä ei tueta";

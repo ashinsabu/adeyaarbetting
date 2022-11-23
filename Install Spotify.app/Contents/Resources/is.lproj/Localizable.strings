@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Heimildar er krafist fyrir uppsetningu Spotify.";
+"sInstallerOsxAskUserToQuitSpotify" = "Lokaðu Spotify og reyndu aftur";
+"sInstallerOsxContinueInBackground" = "Halda áfram í bakgrunni";
+"sInstallerOsxDownloadFailedErrorDescription" = "Villa kom upp við að sækja Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Niðurhal mistókst. Reynir aftur eftir %1$d sek.";
+"sInstallerOsxDownloadingSpotify" = "Sækir Spotify …";
+"sInstallerOsxExtractionFailedErrorDescription" = "Villa kom upp við að draga út Spotify.";
+"sInstallerOsxGenericErrorDescription" = "Villa kom upp við uppsetningu Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Villa kom upp við uppsetningu Spotify.";
+"sInstallerOsxInstallationFailed" = "Uppsetning mistókst";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Sækja á Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Halda uppsetningu áfram";
+"sInstallerOsxInstallationIncompleteDesc" = "Uppsetningu Spotify er nánast lokið. Viltu örugglega hætta?";
+"sInstallerOsxInstallationIncompleteTitle" = "Uppsetningu ólokið";
+"sInstallerOsxInstallingSpotify" = "Setur upp Spotify …";
+"sInstallerOsxMMAboutInstallSpotify" = "Um „Uppsetning Spotify“";
+"sInstallerOsxMMBringAllToFront" = "Færa allt í forgrunn";
+"sInstallerOsxMMHelp" = "Hjálp";
+"sInstallerOsxMMHideInstallSpotify" = "Fela „Uppsetning Spotify“";
+"sInstallerOsxMMHideOthers" = "Fela annað";
+"sInstallerOsxMMInstallSpotify" = "Setja upp Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Setja upp Spotify Help";
+"sInstallerOsxMMMinimize" = "Minnka";
+"sInstallerOsxMMQuitInstallSpotify" = "Loka „Uppsetning Spotify“";
+"sInstallerOsxMMServices" = "Þjónusta";
+"sInstallerOsxMMShowAll" = "Sýna allt";
+"sInstallerOsxMMWindow" = "Gluggi";
+"sInstallerOsxMMZoom" = "Aðdráttur";
+"sInstallerOsxMountFailedErrorDescription" = "Villa kom upp við að setja upp sótt eintak af Spotify.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Ekki færa";
+"sInstallerOsxMoveApplicationButtonMove" = "Færa í forritamöppuna";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Ekki var hægt að færa í forritamöppuna";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Þetta kemur í veg fyrir óreiðu í niðurhalsmöppunni.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Hafðu í huga að þetta krefst aðgangsorðs stjórnanda.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Hægt er að færa þetta sjálfkrafa í forritamöppuna, ef þú vilt.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Færa í forritamöppu?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Færa í forritamöppu í heimamöppunni?";
+"sInstallerOsxQuitButtonTitle" = "Hætta";
+"sInstallerOsxUnsupportedPlatformDesc" = "Því miður er þessi Spotify-útgáfa ætluð fyrir macOS %1$s eða nýrri stýrikerfi.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Finna uppsetningarforrit fyrir eldri útgáfur";
+"sInstallerOsxUnsupportedPlatformTitle" = "Óstuddur vafri";

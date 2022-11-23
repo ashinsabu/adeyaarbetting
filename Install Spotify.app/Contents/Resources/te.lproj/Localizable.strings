@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "ఇన్‌స్టాల్ కావడానికి Spotifyకి అనుమతి అవసరం.";
+"sInstallerOsxAskUserToQuitSpotify" = "దయచేసి, Spotify నుండి నిష్క్రమించి, మళ్లీ ప్రయత్నించండి";
+"sInstallerOsxContinueInBackground" = "నేపథ్యంలో కొనసాగించు";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotifyని డౌన్‌లోడే చేసే ప్రయత్నంలో ఒక లోపం సంభవించింది.";
+"sInstallerOsxDownloadFailedRetryIn" = "డౌన్‌లోడ్ విఫలమైంది. %1$dసె.లో మళ్లీ ప్రయత్నించండి.";
+"sInstallerOsxDownloadingSpotify" = "Spotify డౌన్‌లోడ్ అవుతోంది…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotifyని సంగ్రహించే ప్రయత్నంలో ఒక లోపం సంభవించింది.";
+"sInstallerOsxGenericErrorDescription" = "Spotifyని ఇన్‌స్టాల్ చేసే సమయంలో లోపం ఏర్పడింది.";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotifyని ఇన్‌స్టాల్ చేసే సమయంలో లోపం ఏర్పడింది.";
+"sInstallerOsxInstallationFailed" = "ఇన్‌స్టాలేషన్ విఫలమైంది";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com నుండి డౌన్‌లోడ్ చేయండి";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "ఇన్‌స్టాలేషన్ కొనసాగించు";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify ఇన్‌స్టాలేషన్ దాదాపుగా పూర్తయ్యింది. మీరు నిజంగానే నిష్క్రమించాలనుకుంటున్నారా?";
+"sInstallerOsxInstallationIncompleteTitle" = "ఇన్‌స్టాలేషన్ పూర్తి కాలేదు";
+"sInstallerOsxInstallingSpotify" = "Spotify ఇన్‌స్టాల్ అవుతోంది…";
+"sInstallerOsxMMAboutInstallSpotify" = "Install Spotify గురించి";
+"sInstallerOsxMMBringAllToFront" = "అన్నింటినీ ముందు భాగంలో చూపు";
+"sInstallerOsxMMHelp" = "సహాయం";
+"sInstallerOsxMMHideInstallSpotify" = "Install Spotifyని దాచు";
+"sInstallerOsxMMHideOthers" = "ఇతరాలు దాచు";
+"sInstallerOsxMMInstallSpotify" = "Install Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Install Spotify సహాయం";
+"sInstallerOsxMMMinimize" = "మినిమైజ్ చేయి";
+"sInstallerOsxMMQuitInstallSpotify" = "Install Spotify నుండి నిష్క్రమించు";
+"sInstallerOsxMMServices" = "సేవలు";
+"sInstallerOsxMMShowAll" = "అన్నీ ప్రదర్శించు";
+"sInstallerOsxMMWindow" = "విండో";
+"sInstallerOsxMMZoom" = "జూమ్ చేయి";
+"sInstallerOsxMountFailedErrorDescription" = "డౌన్‌లోడ్ అయిన Spotify డిస్క్ ఇమేజ్‌ను మౌంట్ చేసే ప్రయత్నంలో ఒక లోపం సంభవించింది.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "తరలించవద్దు";
+"sInstallerOsxMoveApplicationButtonMove" = "అప్లికేషన్‌ల ఫోల్డర్‌కు తరలించు";
+"sInstallerOsxMoveApplicationCouldNotMove" = "అప్లికేషన్‌ల ఫోల్డర్‌కు తరలించడం సాధ్యం కాలేదు";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "ఇది మీ డౌన్‌లోడ్‌ల ఫోల్డర్‌ను చిందరవందర కాకుండా ఉంచుతుంది.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "దీనికి ఒక అడ్మినిస్ట్రేటర్ పాస్‌వర్డ్ కావాలని గమనించండి.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "మీకు ఇష్టమైతే, నేను స్వయంగా అప్లికేషన్‌ల ఫోల్డర్‌కు తరలి వెళ్లగలను.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "అప్లికేషన్‌ల ఫోల్డర్‌కు తరలించాలా?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "మీ హోమ్ ఫోల్డర్‌లో అప్లికేషన్‌ల ఫోల్డర్‌కు తరలించాలా?";
+"sInstallerOsxQuitButtonTitle" = "నిష్క్రమించు";
+"sInstallerOsxUnsupportedPlatformDesc" = "క్షమించండి, ఈ Spotify వెర్షన్ macOS %1$s లేదా ఆ తర్వాతి దానికోసం.";
+"sInstallerOsxUnsupportedPlatformHelp" = "పాత వెర్షన్‌ల కోసం ఇన్‌స్టాలర్‌లను కనుగొనండి";
+"sInstallerOsxUnsupportedPlatformTitle" = "మద్దుతు ఇవ్వని ప్లాట్‌ఫామ్";

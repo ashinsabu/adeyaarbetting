@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify het toestemming nodig om te installeer.";
+"sInstallerOsxAskUserToQuitSpotify" = "Verlaat Spotify en probeer weer";
+"sInstallerOsxContinueInBackground" = "Gaan voort in agtergrond";
+"sInstallerOsxDownloadFailedErrorDescription" = "Kon nie Spotify aflaai nie.";
+"sInstallerOsxDownloadFailedRetryIn" = "Kon nie aflaai nie. Probeer weer in %1$ds.";
+"sInstallerOsxDownloadingSpotify" = "Laai tans Spotify af …";
+"sInstallerOsxExtractionFailedErrorDescription" = "Kon nie Spotify uitpak nie.";
+"sInstallerOsxGenericErrorDescription" = "Kon nie Spotify installeer nie.";
+"sInstallerOsxInstallFailedErrorDescription" = "Kon nie Spotify installeer nie.";
+"sInstallerOsxInstallationFailed" = "Installering het misluk";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Laai af van Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Gaan voort met installering";
+"sInstallerOsxInstallationIncompleteDesc" = "Die installering van Spotify is amper klaar. Wil jy regtig die installering verlaat?";
+"sInstallerOsxInstallationIncompleteTitle" = "Installering is nie voltooi nie";
+"sInstallerOsxInstallingSpotify" = "Installeer tans Spotify …";
+"sInstallerOsxMMAboutInstallSpotify" = "Meer oor Installeer Spotify";
+"sInstallerOsxMMBringAllToFront" = "Skuif alles vorentoe";
+"sInstallerOsxMMHelp" = "Hulp";
+"sInstallerOsxMMHideInstallSpotify" = "Versteek Installeer Spotify";
+"sInstallerOsxMMHideOthers" = "Versteek ander";
+"sInstallerOsxMMInstallSpotify" = "Installeer Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Installeer Spotify Hulp";
+"sInstallerOsxMMMinimize" = "Verklein";
+"sInstallerOsxMMQuitInstallSpotify" = "Verlaat Installeer Spotify";
+"sInstallerOsxMMServices" = "Dienste";
+"sInstallerOsxMMShowAll" = "Wys alles";
+"sInstallerOsxMMWindow" = "Venster";
+"sInstallerOsxMMZoom" = "Zoem";
+"sInstallerOsxMountFailedErrorDescription" = "Kon nie die afgelaaide Spotify-skyfbeeld monteer nie.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Moenie beweeg nie";
+"sInstallerOsxMoveApplicationButtonMove" = "Skuif na Toepassings-vouer";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Kon nie na Toepassings-vouer skuif nie";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Dit sal jou Aflaaie-vouer netjies hou.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Let wel: Dit sal ’n administrateurwagwoord vereis.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Ek kan myself na die Toepassing-vouer skuif as jy wil.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Skuif na Toepassings-vouer?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Skuif na Toepassings-vouer in jou Tuis-vouer?";
+"sInstallerOsxQuitButtonTitle" = "Verlaat";
+"sInstallerOsxUnsupportedPlatformDesc" = "Jammer, hierdie weergawe van Spotify is vir macOS %1$s of later.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Kry installeerders vir ouer weergawes";
+"sInstallerOsxUnsupportedPlatformTitle" = "Ongesteunde platform";

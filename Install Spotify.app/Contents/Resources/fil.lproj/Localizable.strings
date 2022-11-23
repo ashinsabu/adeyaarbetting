@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Kailangan ng Spotify ng pahintulot para ma-install.";
+"sInstallerOsxAskUserToQuitSpotify" = "I-quit ang Spotify at subukan ulit";
+"sInstallerOsxContinueInBackground" = "Magpatuloy sa background";
+"sInstallerOsxDownloadFailedErrorDescription" = "Nagka-error habang sinusubukang i-download ang Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "Hindi na-download. Susubukan ulit makalipas ang %1$ds.";
+"sInstallerOsxDownloadingSpotify" = "Dina-download ang Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Nagka-error habang sinusubukang i-extract ang Spotify.";
+"sInstallerOsxGenericErrorDescription" = "Nagka-error habang sinusubukang i-install ang Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "Nagka-error habang sinusubukang i-install ang Spotify.";
+"sInstallerOsxInstallationFailed" = "Hindi Na-install";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "I-download sa Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Ituloy ang Pag-install";
+"sInstallerOsxInstallationIncompleteDesc" = "Halos patapos na ang pag-install ng Spotify. Gusto mo ba talagang i-quit?";
+"sInstallerOsxInstallationIncompleteTitle" = "Hindi Natapos ang Pag-install";
+"sInstallerOsxInstallingSpotify" = "Ini-install ang Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Tungkol sa I-install ang Spotify";
+"sInstallerOsxMMBringAllToFront" = "Paibabawin Lahat";
+"sInstallerOsxMMHelp" = "Tulong";
+"sInstallerOsxMMHideInstallSpotify" = "Itago ang I-install ang Spotify";
+"sInstallerOsxMMHideOthers" = "Itago ang Iba";
+"sInstallerOsxMMInstallSpotify" = "I-install ang Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Tulong sa I-install ang Spotify";
+"sInstallerOsxMMMinimize" = "I-minimize";
+"sInstallerOsxMMQuitInstallSpotify" = "I-quit ang I-install ang Spotify";
+"sInstallerOsxMMServices" = "Mga Service";
+"sInstallerOsxMMShowAll" = "Ipakita Lahat";
+"sInstallerOsxMMWindow" = "Window";
+"sInstallerOsxMMZoom" = "Mag-zoom";
+"sInstallerOsxMountFailedErrorDescription" = "Nagka-error habang sinusubukang i-mount ang na-download na disk image ng Spotify.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Huwag ilipat";
+"sInstallerOsxMoveApplicationButtonMove" = "Ilipat sa folder na Mga Application";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Hindi mailipat sa folder na Mga Application";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Papanatilihin nitong maayos ang folder mong Mga Download.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Tandaang kakailanganin nito ang administrator password.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Pwedeng ako mismo ang lumipat sa folder na Mga Application kung gusto mo.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Ilipat sa folder na Mga Application?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Ilipat sa folder na Mga Application sa folder mong Home?";
+"sInstallerOsxQuitButtonTitle" = "I-quit";
+"sInstallerOsxUnsupportedPlatformDesc" = "Sorry, hindi para sa macOS %1$s o mas bago ang version na 'to ng Spotify.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Maghanap ng mga installer para sa mga mas lumang version";
+"sInstallerOsxUnsupportedPlatformTitle" = "Hindi Supported ang Platform";

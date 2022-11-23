@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "इंस्टाल करे खातिर Spotify के अनुमति चाहीं.";
+"sInstallerOsxAskUserToQuitSpotify" = "Spotify त्यागीं आ फेर से जतन करीं";
+"sInstallerOsxContinueInBackground" = "बैकग्राउंड में जारी राखीं";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify डाउनलोड करे में गड़बड़ हो गईल बा.";
+"sInstallerOsxDownloadFailedRetryIn" = "डाउनलोड नाकाम हो गईल. %1$d सेकेंड में वापस कोशिश कईल जाई.";
+"sInstallerOsxDownloadingSpotify" = "Spotify डाउनलोड हो रहल बा…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify के निचोड़े में गड़बड़ हो गईल बा.";
+"sInstallerOsxGenericErrorDescription" = "Spotify इंस्टाल करे में गड़बड़ हो गईल बा.";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotify इंस्टाल करे में गड़बड़ हो गईल बा.";
+"sInstallerOsxInstallationFailed" = "इंस्टालेशन नाकाम हो गईल";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com से डाउनलोड करीं";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "इंस्टाल कईल जारी राखीं";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify लगभग इंस्टाल हो चुकल बा. रउवा सहिए त्यागे चाह तानीं?";
+"sInstallerOsxInstallationIncompleteTitle" = "इंस्टाल अधूरा बा";
+"sInstallerOsxInstallingSpotify" = "Spotify इंस्टाल हो रहल बा…";
+"sInstallerOsxMMAboutInstallSpotify" = "Spotify इंस्टाल के बारे में";
+"sInstallerOsxMMBringAllToFront" = "सगरी आगा लाईं";
+"sInstallerOsxMMHelp" = "मदद";
+"sInstallerOsxMMHideInstallSpotify" = "Spotify इंस्टाल लुकवाईं";
+"sInstallerOsxMMHideOthers" = "दोसरन के लुकवाईं";
+"sInstallerOsxMMInstallSpotify" = "Spotify इंस्टाल करीं";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify इंस्टाल करे में मदद";
+"sInstallerOsxMMMinimize" = "आकार सिकोड़ीं";
+"sInstallerOsxMMQuitInstallSpotify" = "Spotify इंस्टाल के त्यागीं";
+"sInstallerOsxMMServices" = "सेवा";
+"sInstallerOsxMMShowAll" = "कूल्ही देखाईं";
+"sInstallerOsxMMWindow" = "Window";
+"sInstallerOsxMMZoom" = "जूम करीं";
+"sInstallerOsxMountFailedErrorDescription" = "डाउनलोड कईल Spotify डिस्क के फोटो के चढ़ावे के कोशिश में गड़बड़ हो गईल.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "एने-ओने मत ले जाईं";
+"sInstallerOsxMoveApplicationButtonMove" = "ऐप्लीकेशन फोल्डर में ले जाईं";
+"sInstallerOsxMoveApplicationCouldNotMove" = "ऐप्लीकेशन फोल्डर में ना जा पाई";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "एह से राउर डाउनलोड फोल्डर व्यवस्थित रही.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "याद राखीं, एकरा खातिर ऐडमिन पासवर्ड जरूरी बा.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "जे रउवा चाहीं त हम ऐप्लीकेशन फोल्डर में जा सकेनीं.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "ऐप्लीकेशन फोल्डर में ले जाईं?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "राउर होम फोल्डर के भीतर ऐप्लीकेशन फोल्डर में ले जाईं?";
+"sInstallerOsxQuitButtonTitle" = "त्यागीं";
+"sInstallerOsxUnsupportedPlatformDesc" = "माफ करीं, Spotify के ई वर्जन macOS %1$s चाहे ओकरा आगे के वर्जन खातिर बा.";
+"sInstallerOsxUnsupportedPlatformHelp" = "पुरान वर्जन खातिर इंस्टॉलर पाईं";
+"sInstallerOsxUnsupportedPlatformTitle" = "नाकारा मंच";

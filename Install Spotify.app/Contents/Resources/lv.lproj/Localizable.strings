@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "Spotify nepieciešama atļauja, lai instalētu.";
+"sInstallerOsxAskUserToQuitSpotify" = "Lūdzu, izej no Spotify un mēģini vēlreiz";
+"sInstallerOsxContinueInBackground" = "Turpināt fonā";
+"sInstallerOsxDownloadFailedErrorDescription" = "Mēģinot lejupielādēt Spotify, radās kļūda.";
+"sInstallerOsxDownloadFailedRetryIn" = "Lejupielāde neizdevās. Nākamais mēģinājums pēc %1$d s.";
+"sInstallerOsxDownloadingSpotify" = "Lejupielādē Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "Mēģinot izgūt Spotify, radās kļūda.";
+"sInstallerOsxGenericErrorDescription" = "Mēģinot instalēt Spotify, radās kļūda.";
+"sInstallerOsxInstallFailedErrorDescription" = "Mēģinot instalēt Spotify, radās kļūda.";
+"sInstallerOsxInstallationFailed" = "Instalēšana neizdevās";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Lejupielādēt no Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "Turpināt instalēšanu";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify instalēšana ir gandrīz pabeigta. Vai tiešām vēlies iziet?";
+"sInstallerOsxInstallationIncompleteTitle" = "Instalēšana nepilnīga";
+"sInstallerOsxInstallingSpotify" = "Instalē Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "Par Instalēt Spotify";
+"sInstallerOsxMMBringAllToFront" = "Pārnest visu priekšā";
+"sInstallerOsxMMHelp" = "Palīdzība";
+"sInstallerOsxMMHideInstallSpotify" = "Paslēpt Instalēt Spotify";
+"sInstallerOsxMMHideOthers" = "Paslēpt citus";
+"sInstallerOsxMMInstallSpotify" = "Instalēt Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "Instalēt Spotify palīdzība";
+"sInstallerOsxMMMinimize" = "Minimizēt";
+"sInstallerOsxMMQuitInstallSpotify" = "Iziet no Instalēt Spotify";
+"sInstallerOsxMMServices" = "Pakalpojumi";
+"sInstallerOsxMMShowAll" = "Rādīt visu";
+"sInstallerOsxMMWindow" = "Logs";
+"sInstallerOsxMMZoom" = "Tālummaiņa";
+"sInstallerOsxMountFailedErrorDescription" = "Mēģinot uzstādīt lejupielādēti Spotify diska attēlu, radās kļūda.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "Nepārvietot";
+"sInstallerOsxMoveApplicationButtonMove" = "Pārvietot uz mapi Programmas";
+"sInstallerOsxMoveApplicationCouldNotMove" = "Nevarēja pārvietot uz mapi Programmas";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "Tādējādi tiks uzturēta kārtība tavā mapē Lejupielādes.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "Ņem vērā, ka tam ir nepieciešama administratora parole.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "Ja vēlies, es varu to pārvietot uz mapi Programmas tavā vietā.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "Vai pārvietot uz mapi Programmas?";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "Vai pārvietot uz mapi Programmas tavā mapē Sākums?";
+"sInstallerOsxQuitButtonTitle" = "Iziet";
+"sInstallerOsxUnsupportedPlatformDesc" = "Diemžēl šī Spotify versija ir paredzēta macOS %1$s vai jaunākai versijai.";
+"sInstallerOsxUnsupportedPlatformHelp" = "Atrast instalēšanas programmas vecākām versijām";
+"sInstallerOsxUnsupportedPlatformTitle" = "Neatbalstīta platforma";

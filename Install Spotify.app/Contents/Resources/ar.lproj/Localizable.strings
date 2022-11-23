@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "يتطلب تطبيق Spotify الإذن لمتابعة التثبيت.";
+"sInstallerOsxAskUserToQuitSpotify" = "يرجى الخروج من تطبيق Spotify والمحاولة مرة أخرى";
+"sInstallerOsxContinueInBackground" = "تابع في الشاشة الخلفية";
+"sInstallerOsxDownloadFailedErrorDescription" = "حدث خطأ أثناء محاولة تنزيل Spotify.";
+"sInstallerOsxDownloadFailedRetryIn" = "فشل التنزيل. اعادة المحاولة في %1$d.";
+"sInstallerOsxDownloadingSpotify" = "جاري تحميل Spotify ...";
+"sInstallerOsxExtractionFailedErrorDescription" = "حدث خطأ أثناء محاولة فصل Spotify.";
+"sInstallerOsxGenericErrorDescription" = "حدث خطأ خلال محاولة تثبيت Spotify.";
+"sInstallerOsxInstallFailedErrorDescription" = "حدث خطأ حين حاولت تثبيت Spotify.";
+"sInstallerOsxInstallationFailed" = "فشل التثبيت";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "نَّزل من Spotify.com";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "متابعة التثبيت";
+"sInstallerOsxInstallationIncompleteDesc" = "اكتمل تثبيت Spotify تقريباً. هل ترغب فعلاً بالمغادرة؟";
+"sInstallerOsxInstallationIncompleteTitle" = "الثبيت غير مكتمل";
+"sInstallerOsxInstallingSpotify" = "جاري تثبيت Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "لمحة عن تثبيت Spotify";
+"sInstallerOsxMMBringAllToFront" = "أظهِر كل النوافذ المفتوحة";
+"sInstallerOsxMMHelp" = "مساعدة";
+"sInstallerOsxMMHideInstallSpotify" = "إخفاء تثبيت Spotify";
+"sInstallerOsxMMHideOthers" = "قم بإخفاء الخيارات الأخرى";
+"sInstallerOsxMMInstallSpotify" = "تثبيت Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "تثبيت Spotify للمساعدة";
+"sInstallerOsxMMMinimize" = "تصغير";
+"sInstallerOsxMMQuitInstallSpotify" = "غادر تثبيت Spotify";
+"sInstallerOsxMMServices" = "الخدمات";
+"sInstallerOsxMMShowAll" = "عرض الكل";
+"sInstallerOsxMMWindow" = "نافذة";
+"sInstallerOsxMMZoom" = "تكبير";
+"sInstallerOsxMountFailedErrorDescription" = "حدث خطأ أثناء محاولة تثبيت صورة قرص تطبيق Spotify التي تم تحميلها.";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "لا تنقل التطبيق";
+"sInstallerOsxMoveApplicationButtonMove" = "الانتقال إلى مجلد التطبيقات";
+"sInstallerOsxMoveApplicationCouldNotMove" = "تعذّر الانتقال إلى مجلد التطبيقات";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "يحافظ هذا على مجلد الملفات التي تم تنزيلها مرتّباً.";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "لاحظ بأنّ العملية تتطلب كلمة مرور للمدير.";
+"sInstallerOsxMoveApplicationQuestionMessage" = "يمكنني الانتقال إلى مجلد التطبيقات إذا رغبت.";
+"sInstallerOsxMoveApplicationQuestionTitle" = "هل تريد الانتقال إلى مجلد التطبيقات؟";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "هل تريد الانتقال إلى مجلد التطبيقات في مجلد الصفحة الرئيسية الخاص بك؟";
+"sInstallerOsxQuitButtonTitle" = "إنهاء";
+"sInstallerOsxUnsupportedPlatformDesc" = "عذراً، هذا الإصدار من Spotify مخصص لنظام التشغيل macOS %1$s أو الإصدارات الأحدث.";
+"sInstallerOsxUnsupportedPlatformHelp" = "البحث عن برامج تثبيت الإصدارات الأقدم";
+"sInstallerOsxUnsupportedPlatformTitle" = "منصة غير مدعومة";

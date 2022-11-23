@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "获取权限后才可安装 Spotify。";
+"sInstallerOsxAskUserToQuitSpotify" = "请退出 Spotify 并重试";
+"sInstallerOsxContinueInBackground" = "在后台中继续";
+"sInstallerOsxDownloadFailedErrorDescription" = "尝试下载 Spotify 时出现错误。";
+"sInstallerOsxDownloadFailedRetryIn" = "下载失败。%1$d 秒后重试。";
+"sInstallerOsxDownloadingSpotify" = "正在下载 Spotify…";
+"sInstallerOsxExtractionFailedErrorDescription" = "尝试提取 Spotify 时出现错误。";
+"sInstallerOsxGenericErrorDescription" = "尝试安装 Spotify 时出现错误。";
+"sInstallerOsxInstallFailedErrorDescription" = "尝试安装 Spotify 时出现错误。";
+"sInstallerOsxInstallationFailed" = "安装失败";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "从 Spotify.com 下载";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "继续安装";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify 即将完成安装。你确定要退出吗？";
+"sInstallerOsxInstallationIncompleteTitle" = "安装未完成";
+"sInstallerOsxInstallingSpotify" = "正在安装 Spotify…";
+"sInstallerOsxMMAboutInstallSpotify" = "关于安装 Spotify";
+"sInstallerOsxMMBringAllToFront" = "将此应用的所有窗口前置";
+"sInstallerOsxMMHelp" = "帮助";
+"sInstallerOsxMMHideInstallSpotify" = "隐藏安装 Spotify";
+"sInstallerOsxMMHideOthers" = "隐藏其他";
+"sInstallerOsxMMInstallSpotify" = "安装 Spotify";
+"sInstallerOsxMMInstallSpotifyHelp" = "安装 Spotify 帮助中心";
+"sInstallerOsxMMMinimize" = "最小化";
+"sInstallerOsxMMQuitInstallSpotify" = "退出安装 Spotify";
+"sInstallerOsxMMServices" = "服务";
+"sInstallerOsxMMShowAll" = "显示全部";
+"sInstallerOsxMMWindow" = "窗口";
+"sInstallerOsxMMZoom" = "缩放";
+"sInstallerOsxMountFailedErrorDescription" = "尝试安装已下载的 Spotify 磁盘图像时出现错误。";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "请勿移动";
+"sInstallerOsxMoveApplicationButtonMove" = "移动至“应用程序”文件夹";
+"sInstallerOsxMoveApplicationCouldNotMove" = "无法移动至“应用程序”文件夹";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "此操作将保持“下载”文件夹的有序性。";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "请注意，此操作需要管理员密码。";
+"sInstallerOsxMoveApplicationQuestionMessage" = "如同意，我将自动移至“应用程序”文件夹。";
+"sInstallerOsxMoveApplicationQuestionTitle" = "是否移动至“应用程序”文件夹？";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "移动至“主页”文件夹中的“应用程序”文件夹？";
+"sInstallerOsxQuitButtonTitle" = "退出";
+"sInstallerOsxUnsupportedPlatformDesc" = "抱歉，此版本的 Spotify 适用于 MacOS %1$s 或更高版本。";
+"sInstallerOsxUnsupportedPlatformHelp" = "寻找旧版本的安装程序";
+"sInstallerOsxUnsupportedPlatformTitle" = "平台不受支持";

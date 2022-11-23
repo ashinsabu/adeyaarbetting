@@ -1,0 +1,48 @@
+/*
+  Localizable.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"sInstallerOsxAskUserToAuthenticate." = "انسٹال کرن لئی Spotify نوں اجازت دی لوڑ اے۔";
+"sInstallerOsxAskUserToQuitSpotify" = "میربانی کر کے Spotify توں بار نکلو تے فیر کوشش کرو";
+"sInstallerOsxContinueInBackground" = "بیک گراؤنڈ اچ جاری رکھو";
+"sInstallerOsxDownloadFailedErrorDescription" = "Spotify نوں ڈاؤن لوڈ کرن دی کوشش اچ اک خرابی آ گئی اے۔";
+"sInstallerOsxDownloadFailedRetryIn" = "ڈاؤن لوڈ ناکام ہو گئی۔ %1$d سیکنڈ اچ دوبارہ کوشش کیتی جاوے گی۔";
+"sInstallerOsxDownloadingSpotify" = "Spotify ڈاؤن لوڈ کر رئے آں۔۔۔";
+"sInstallerOsxExtractionFailedErrorDescription" = "Spotify نوں ایکسٹریکٹ کرن دی کوشش اچ اک خرابی آ گئی اے۔";
+"sInstallerOsxGenericErrorDescription" = "Spotify نوں انسٹال کر دے ہووے اک خرابی آگئی اے۔";
+"sInstallerOsxInstallFailedErrorDescription" = "Spotify نوں انسٹال کر دے ہووے اک خرابی آگئی اے۔";
+"sInstallerOsxInstallationFailed" = "انسٹالیشن ناکام ہو گئی";
+"sInstallerOsxInstallationFailedDefaultButtonTitle" = "Spotify.com توں ڈاؤن لوڈ کرو";
+"sInstallerOsxInstallationIncompleteContinueButtonTitle" = "انسٹالیشن جاری رکھو";
+"sInstallerOsxInstallationIncompleteDesc" = "Spotify دی انسٹالیشن تقریباً پوری ہو گئی اے۔ تسی واقعی بار نکنا چاہندے او؟";
+"sInstallerOsxInstallationIncompleteTitle" = "انسٹالیشن نامکمل اے";
+"sInstallerOsxInstallingSpotify" = "Spotify انسٹال کر رئے آں…";
+"sInstallerOsxMMAboutInstallSpotify" = "Spotify انسٹال کرن دے بارے";
+"sInstallerOsxMMBringAllToFront" = "سبھ نوں سامنے لیاؤ";
+"sInstallerOsxMMHelp" = "مدد";
+"sInstallerOsxMMHideInstallSpotify" = "Spotify انسٹال کرن نوں لکاؤ";
+"sInstallerOsxMMHideOthers" = "دوجیاں نوں لکاؤ";
+"sInstallerOsxMMInstallSpotify" = "Spotify انسٹال کرو";
+"sInstallerOsxMMInstallSpotifyHelp" = "Spotify مدد انسٹال کرو";
+"sInstallerOsxMMMinimize" = "گھٹاؤ";
+"sInstallerOsxMMQuitInstallSpotify" = "Spotify انسٹال توں بار نکلو";
+"sInstallerOsxMMServices" = "سروسز";
+"sInstallerOsxMMShowAll" = "سارے وکھاؤ";
+"sInstallerOsxMMWindow" = "Window";
+"sInstallerOsxMMZoom" = "زوم";
+"sInstallerOsxMountFailedErrorDescription" = "ڈاؤن لوڈ کیتی گئی Spotify ڈسک امیج نوں ماؤنٹ کرن دی کوشش دے دوران اک خرابی آ گئی اے۔";
+"sInstallerOsxMoveApplicationButtonDoNotMove" = "نہ گھلو";
+"sInstallerOsxMoveApplicationButtonMove" = "ایپلیکیشنز فولڈر اچ گھلو";
+"sInstallerOsxMoveApplicationCouldNotMove" = "ایپلیکیشنز فولڈر اچ نہیں گھلیا جا سکیا";
+"sInstallerOsxMoveApplicationQuestionInfoInDownloadsFolder" = "ایہہ تہاڈے ڈاؤن لوڈز فولڈر نوں ترتیب نال رکھے گا۔";
+"sInstallerOsxMoveApplicationQuestionInfoWillRequirePasswd" = "نوٹ کر لیو کہ ایہدے لئی تہانوں اک منتظم پاس ورڈ دی لوڑ ہوندی اے۔";
+"sInstallerOsxMoveApplicationQuestionMessage" = "جے تسی لائیک کرو تے میں آپنے آپ نوں ایپلیکیشنز فولڈر اچ گھل سکدا/سکدی آں۔";
+"sInstallerOsxMoveApplicationQuestionTitle" = "ایپلیکیشنز فولڈر اچ گھلیے؟";
+"sInstallerOsxMoveApplicationQuestionTitleHome" = "آپنے ہوم فولڈر اچ ایپلیکیشنز فولڈر اچ گھلیے؟";
+"sInstallerOsxQuitButtonTitle" = "مکا دیو";
+"sInstallerOsxUnsupportedPlatformDesc" = "معاف کرو، Spotify دا ایہہ ورژن macOS %1$s یا ایس توں بعد لئی اے۔";
+"sInstallerOsxUnsupportedPlatformHelp" = "پرانے ورژنز لئی انسٹالرز لبھو";
+"sInstallerOsxUnsupportedPlatformTitle" = "غیر معاونت کیتا پلیٹ فارم";

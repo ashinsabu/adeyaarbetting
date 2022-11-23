@@ -37,8 +37,10 @@ const getMatchInfo = async () => {
 		},
 		config
 	);
-	console.log(result.data.data.filter(item => item.finished !== "TRUE"));
-	return result.data.data.filter(item => item.finished !== "TRUE")[0];
+	console.log(
+		result.data.data.filter(item => item.time_elapsed !== "finished")
+	);
+	return result.data.data.filter(item => item.time_elapsed !== "finished")[0];
 };
 
 document.getElementById("place-bets-btn").onclick = async () => {

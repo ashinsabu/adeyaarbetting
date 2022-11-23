@@ -1,0 +1,9 @@
+/*
+  InfoPlist.strings
+
+  Copyright Spotify. All rights reserved.
+*/
+
+
+"CFBundleDisplayName" = "Uppsetningarforrit Spotify";
+"CFBundleName" = "Uppsetningarforrit Spotify";
