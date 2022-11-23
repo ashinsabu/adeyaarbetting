@@ -23,7 +23,9 @@ const login = async () => {
 const getMatchInfo = async () => {
 	const token = await login();
 	console.log("Token fetched successfully");
-	const now = new Date();
+	const now = new Date(
+		new Date().toLocaleString("en", { timeZone: "Asia/Qatar" })
+	);
 	const date = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
 	const config = {
 		headers: {
