@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>AdeYaarBet</title>
@@ -16,8 +17,8 @@
     <h3 class="open-close-status open">Betting OPEN</h3>
     <div class="match-info">
         <div class="team-1 teambox">
-            <p class="country-name">England</p>
-            <img class="team-flag" src="assets/england.png">
+            <p class="country-name country-1-name">Switzerland</p>
+            <img class="team-flag1" src="assets/switzerland.png">
 
             <button type="button" class="btn btn-primary place-bet" data-team="1" data-toggle="modal" data-target=".bd-example-modal-lg1">Place Bet</button>
             
@@ -29,25 +30,32 @@
                         <h2 style="text-align: center; font-weight: bold;">Bet Information</h2>
                         <div>
                             <p class="field-label">Username</p>
-                            <input type="text" name="username" id="username">
+                            <input type="text" name="username" id="username1">
                         </div>
                         <div>
                             <p class="field-label">Password/Pin</p>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password1">
                         </div>
                         <div>
                             <p>Amount</p>
-                            <div class="bet-amounts">
-                                <div class="bet-amount">5</div>
-                                <div class="bet-amount">10</div>
-                                <div class="bet-amount">15</div>
-                                <div class="bet-amount">20</div>
-                            </div>
+                            <select name="amount" id="amount-dropdown" class="teamone" data-team="1">
+                                <option value="0">0</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                            </select>
                         </div>
                         <div>
-                            <span>Amount: </span><span id="team2-bet"></span>
+                            <span>Amount Confirmation: </span><span id="team1-bet">0</span>
                         </div>
-                        <button type="button" class="submit-bet" data-betteam="2">Place Your Bet</button>
+                        <button type="button" class="submit-bet" data-betteam="1">Place Your Bet</button>
+                        <p style="font-size: 10px; color: red;" id="message-1"></p>
                     </div>
 
                   </div>
@@ -59,8 +67,8 @@
             VS.
         </div>
         <div class="team-2 teambox">
-            <p class="country-name">Iran</p>
-            <img class="team-flag" src="assets/iran.png">
+            <p class="country-name country-2-name">Cameroon </p>
+            <img class="team-flag2" src="assets/cameroon.png">
 
             <button type="button" class="btn btn-primary place-bet" data-team="2" data-toggle="modal" data-target=".bd-example-modal-lg2">Place Bet</button>
             
@@ -72,25 +80,32 @@
                         <h2 style="text-align: center; font-weight: bold;">Bet Information</h2>
                         <div>
                             <p class="field-label">Username</p>
-                            <input type="text" name="username" id="username">
+                            <input type="text" name="username" id="username2">
                         </div>
                         <div>
                             <p class="field-label">Password/Pin</p>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password2">
                         </div>
                         <div>
                             <p>Amount</p>
-                            <div class="bet-amounts">
-                                <div class="bet-amount">5</div>
-                                <div class="bet-amount">10</div>
-                                <div class="bet-amount">15</div>
-                                <div class="bet-amount">20</div>
-                            </div>
+                            <select name="amount" id="amount-dropdown" class="teamtwo" data-team="2">
+                                <option value="0">0</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                            </select>
                         </div>
                         <div>
-                            <span>Amount: </span><span id="team1-bet"></span>
+                            <span>Amount Confirmation: </span><span id="team2-bet">0</span>
                         </div>
                         <button type="button" class="submit-bet" data-betteam="2">Place Your Bet</button>
+                        <p style="font-size: 10px; color: red;" id="message-2"></p>
                     </div>
 
                   </div>
@@ -98,10 +113,12 @@
             </div>
         </div>
     </div>
-    <p style="margin-top: 32px; text-align: center; font-size: 14px; width: 30vh;">Note: If you've previously placed a bet it will be replaced.</p>
+    <p style="margin-top: 32px; text-align: center; font-size: 12px; width: 30vh;">Note: If you've previously placed a bet it will be replaced.</p>
+    <p style="margin-top: 4px; text-align: center; font-size: 12px; width: 30vh;">In order to delete your bet just place a 0 bet anywhere.</p>
     <div class="current-bets">Current Bets</div>
     <div class="tables">
         <div>
+            <p class="country-name country-1-name" style="text-align: center;">Switzerland</p>
             <table class="bet-table team1-table">
                 <tr>
                     <th>User</th>
@@ -112,6 +129,7 @@
             </table>
         </div>
         <div>
+            <p class="country-name country-2-name" style="text-align: center;">Cameroon</p>
             <table class="bet-table team2-table">
                 <tr>
                     <th>User</th>
@@ -145,6 +163,8 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
     </script>
+    <script type="module" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script src ="script.js" type="module"></script>
 
 </body>

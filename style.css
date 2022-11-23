@@ -91,7 +91,7 @@ body{
 }
 
 .place-bet:hover{
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 .current-bets{    
@@ -104,6 +104,7 @@ body{
     transform: scale(1.05);
 }
 .footer{
+    color: rgba(128, 128, 128, 0.614);
     position: absolute;
     bottom: 8px;
 }
@@ -126,6 +127,7 @@ body{
     display: flex;
     gap: 8px;
     margin-top: 8px;
+    cursor: pointer;
 }
 .bet-amount{
     display: flex;
@@ -171,4 +173,43 @@ th,td{
     margin-left: 8px;
     margin-right: 8px;
     gap: 16px;
+}
+
+@media only all and (max-width: 900px){
+    body{
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+    .match-info{
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    .current-bets{
+        font-size: 18px;
+    }
+    th,td{
+        font-size: 10px;
+    }
+    .tables{
+        margin-left: 0;
+        margin-right: 0;
+        gap: 8px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .bet-amount{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding: 4px 18px;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background-color: teal;
+        color: white;
+    }
+    .active{
+        background-color:grey;
+    }
 }
