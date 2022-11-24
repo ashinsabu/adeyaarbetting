@@ -156,67 +156,67 @@ document.querySelectorAll('.submit-bet').forEach((betButton) => {
 })
 
 
-const login = async () => {
-	const result = await fetch(
-		'http://api.cup2022.ir/api/v1/user/login',
-        {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            method: 'POST',
-            mode: 'cors',
+// const login = async () => {
+// 	const result = await fetch(
+// 		'http://api.cup2022.ir/api/v1/user/login',
+//         {
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             method: 'POST',
+//             mode: 'cors',
             
-            body: JSON.stringify({
-                'email': "hi@boidushya.com",
-                'password': "password123",
-            }),                
-		});
-	let token = result.data.data.token;
-	return token;
-};
+//             body: JSON.stringify({
+//                 'email': "hi@boidushya.com",
+//                 'password': "password123",
+//             }),                
+// 		});
+// 	let token = result.data.data.token;
+// 	return token;
+// };
 
-const getMatchInfo = async () => {
-	const token = await login();
-	console.log("Token fetched successfully");
-	const now = new Date(
-		new Date().toLocaleString("en", { timeZone: "Asia/Qatar" })
-	);
-	const date = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
-	// const config = {
-	// 	headers: {
-	// 		Authorization: `Bearer ${token}`,
-	// 	},
-	// };
+// const getMatchInfo = async () => {
+// 	const token = await login();
+// 	console.log("Token fetched successfully");
+// 	const now = new Date(
+// 		new Date().toLocaleString("en", { timeZone: "Asia/Qatar" })
+// 	);
+// 	const date = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
+// 	// const config = {
+// 	// 	headers: {
+// 	// 		Authorization: `Bearer ${token}`,
+// 	// 	},
+// 	// };
     
-	const result = await fetch(
-		'http://api.cup2022.ir/api/v1/bydate',
-        {
-        method: 'POST',
-        mode: 'CORS',
-        headers: {
-            'Authorization': `Bearer ${token}`
-        },
-		body: JSON.stringify(`
-			date: ${date},
-        `),
+// 	const result = await fetch(
+// 		'http://api.cup2022.ir/api/v1/bydate',
+//         {
+//         method: 'POST',
+//         mode: 'CORS',
+//         headers: {
+//             'Authorization': `Bearer ${token}`
+//         },
+// 		body: JSON.stringify(`
+// 			date: ${date},
+//         `),
             
-		});
-	console.log(
-		result.data.data.filter(item => item.time_elapsed !== "finished")
-	);
-	return result.data.data.filter(item => item.time_elapsed !== "finished")[0];
-};
+// 		});
+// 	console.log(
+// 		result.data.data.filter(item => item.time_elapsed !== "finished")
+// 	);
+// 	return result.data.data.filter(item => item.time_elapsed !== "finished")[0];
+// };
 
-const loadMatchInfo = async () => {
-	// toggleModal();
-	const res = await getMatchInfo();
-	document.getElementById("country-1-name").innerText = res.home_team_en;
-	document.getElementById("country-2-name").innerText = res.away_team_en;
-	document.getElementById("team-flag1").src = res.home_flag;
-	document.getElementById("team-flag2").src = res.away_flag;
+// const loadMatchInfo = async () => {
+// 	// toggleModal();
+// 	const res = await getMatchInfo();
+// 	document.getElementById("country-1-name").innerText = res.home_team_en;
+// 	document.getElementById("country-2-name").innerText = res.away_team_en;
+// 	document.getElementById("team-flag1").src = res.home_flag;
+// 	document.getElementById("team-flag2").src = res.away_flag;
 
-	// toggleStatus();
-};
+// 	// toggleStatus();
+// };
 
 const toggleStatus = () => {
 	// const elem = document.getElementById("status");
@@ -266,4 +266,56 @@ const toggleStatus = () => {
 // };
 
 // loadMatchInfo();
+
+const getNextMatchInfo = async () => {
+    fetch("https://v3.football.api-sports.io/fixtures?league=1&next=1", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "v3.football.api-sports.io",
+		"x-rapidapi-key": "ee006e13d4212ec608933d9d288e672d"
+	}
+    })
+    .then(response => response.json()).then((data) => {
+        const firstLayer = data["response"];
+        const secondLayer = firstLayer[0];
+        const status = secondLayer["fixture"]["status"]["short"]; //NS = not started
+        const teams = secondLayer["teams"];
+        const firstTeamName = teams["home"]["name"];
+        const secondTeamName = teams["away"]["name"];
+
+        const firstTeamLogo = teams["home"]["logo"];
+        const secondTeamLogo = teams["away"]["logo"];
+        console.log(data);
+        // console.log(firstTeamName,secondTeamName);
+
+        document.querySelectorAll(".country-1-name").forEach((x) => {
+            x.innerText = firstTeamName;
+        })
+        document.querySelectorAll(".country-2-name").forEach((x)=>{
+            x.innerText= secondTeamName;
+        })
+        document.querySelector(".team-flag1").src = firstTeamLogo;
+        document.querySelector(".team-flag2").src = secondTeamLogo;
+        return {
+            status: status,
+            firstTeamLogo: firstTeamLogo,
+            firstTeamName: firstTeamName,
+            secondTeamLogo: secondTeamLogo,
+            secondTeamName: secondTeamName,
+        };
+
+    })
+    .catch(err => {
+        console.log(err);
+    });
+
+}
+// const loadNextMatchInfo = async () => {
+// 	// toggleModal();
+// 	const res = await getNextMatchInfo();
+	
+
+// 	// toggleStatus();
+// };
 startObserver();
+getNextMatchInfo();

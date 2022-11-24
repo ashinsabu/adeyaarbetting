@@ -67,11 +67,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 32px;
 }
-.team-flag{
+.team-flag1{
     width: 32vh; 
-    height: 16vh; 
+    height: 24vh; 
+    object-fit: cover; 
+    object-position: 50% 50%;
+    
+}
+.team-flag2{
+    width: 32vh; 
+    height: 24vh; 
     object-fit: cover; 
     object-position: 50% 50%;
     
@@ -211,5 +219,19 @@ th,td{
     }
     .active{
         background-color:grey;
+    }
+    .team-flag1{
+        height: 16vh; 
+        object-fit: cover; 
+        object-position: 50% 50%;
+        
+    }
+    .team-flag2{
+        height: 16vh;
+        object-fit: cover; 
+        object-position: 50% 50%;
+    }
+    .place-bet{
+        font-size: 14px;
     }
 }
