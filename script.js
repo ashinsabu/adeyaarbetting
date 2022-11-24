@@ -1,8 +1,44 @@
 import { getDatabase,ref,set,onValue } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 // import axios from 'axios'; 
 
+//info to be set manually since api not working
+let nextMatchStart = "21:30:00";
+let country1 = "Portugal";
+let country2 = "Ghana";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/VJQ1emg0TOubjGnap4vWuw_96x96.png";
 
-let canBet = false;
+
+
+let canBet = true;
+var time = new Date();
+let curTime = (time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+
+if(curTime>nextMatchStart){
+    canBet = false;
+}
+
+const setMatchInfo = async () => {
+    document.querySelectorAll('.country-1-name').forEach((x) => {
+        x.innerHTML = country1;
+    })
+    document.querySelectorAll('.country-2-name').forEach((x) => {
+        x.innerHTML = country2;
+    })
+    document.querySelector('.team-flag1').src = country1Img;
+    document.querySelector('.team-flag2').src = country2Img;
+}
+
+if(canBet){
+    document.querySelector('.open-close-status').innerText = "Betting OPEN";
+    document.querySelector('.open-close-status').classList.remove("closed");
+    document.querySelector('.open-close-status').classList.add("open");
+}
+else{
+    document.querySelector('.open-close-status').innerText = "Betting CLOSED";
+    document.querySelector('.open-close-status').classList.remove("open");
+    document.querySelector('.open-close-status').classList.add("closed");
+}
 const updateTables = (betData) => {
     document.querySelectorAll('.betRecord').forEach((x)=>{
         x.remove();
@@ -73,19 +109,20 @@ const startObserver = () =>{
 
 
 const userToPassword = {
-    "ashin":"xyz",
-    "aryan":"xyz",
+    "ashin":"messifan",
+    "aryan":"bitchmallu69",
     "pratyush":"xyz",
-    "manan":"xyz",
+    "manan":"ilovemallus",
     "ankur":"xyz",
-    "boidushya":"xyz",
-    "dev":"xyz",
+    "boidushya":"password1234",
+    "dev":"sexymallu69",
     "drumil":"xyz",
-    "jayesh":"xyz",
+    "jayesh":"ashinmom12",
     "rahul":"xyz",
-    "rohan":"xyz",
+    "rohan":"ashin69",
     "kartik":"xyz"
 }
+
 const placebet = (user,betAmt,team) => {
     const db = getDatabase();
     set(ref(db,'bets/'+user),{
@@ -105,10 +142,14 @@ document.querySelectorAll('#amount-dropdown').forEach((betAmountDropDown) => {
             document.querySelector('#team2-bet').innerHTML = betAmountDropDown.value;
     })
 })  
-let status = true;
+
 document.querySelectorAll('.submit-bet').forEach((betButton) => {
     betButton.addEventListener('click',() => {
         // console.log(betButton.dataset.betteam);
+        if(canBet == false){
+            document.querySelector('#message-1').innerHTML = "Can't bet now";
+            return;
+        }
         if(betButton.dataset.betteam == 1){
             let username = (document.querySelector("#username1").value).toString();
             let password = document.querySelector("#password1").value;
@@ -272,7 +313,7 @@ const getNextMatchInfo = async () => {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "v3.football.api-sports.io",
-		"x-rapidapi-key": "ee006e13d4212ec608933d9d288e672d"
+		"x-rapidapi-key": ""
 	}
     })
     .then(response => response.json()).then((data) => {
@@ -329,5 +370,6 @@ const getNextMatchInfo = async () => {
 
 // 	// toggleStatus();
 // };
+setMatchInfo();
 startObserver();
-getNextMatchInfo();
+// getNextMatchInfo();
