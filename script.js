@@ -2,7 +2,7 @@ import { getDatabase,ref,set,onValue } from 'https://www.gstatic.com/firebasejs/
 // import axios from 'axios'; 
 
 
-
+let canBet = false;
 const updateTables = (betData) => {
     document.querySelectorAll('.betRecord').forEach((x)=>{
         x.remove();
@@ -105,7 +105,7 @@ document.querySelectorAll('#amount-dropdown').forEach((betAmountDropDown) => {
             document.querySelector('#team2-bet').innerHTML = betAmountDropDown.value;
     })
 })  
-
+let status = true;
 document.querySelectorAll('.submit-bet').forEach((betButton) => {
     betButton.addEventListener('click',() => {
         // console.log(betButton.dataset.betteam);
@@ -286,6 +286,7 @@ const getNextMatchInfo = async () => {
         const firstTeamLogo = teams["home"]["logo"];
         const secondTeamLogo = teams["away"]["logo"];
         console.log(data);
+        canBet = (status == "NS"?true:false);
         // console.log(firstTeamName,secondTeamName);
 
         document.querySelectorAll(".country-1-name").forEach((x) => {
@@ -296,6 +297,17 @@ const getNextMatchInfo = async () => {
         })
         document.querySelector(".team-flag1").src = firstTeamLogo;
         document.querySelector(".team-flag2").src = secondTeamLogo;
+
+        if(canBet){
+            document.querySelector('.open-close-status').innerText = "Betting OPEN";
+            document.querySelector('.open-close-status').classList.remove("close");
+            document.querySelector('.open-close-status').classList.add("open");
+        }
+        else{
+            document.querySelector('.open-close-status').innerText = "Betting CLOSE";
+            document.querySelector('.open-close-status').classList.remove("open");
+            document.querySelector('.open-close-status').classList.add("close");
+        }
         return {
             status: status,
             firstTeamLogo: firstTeamLogo,
