@@ -108,12 +108,11 @@ body{
     font-weight: bold;
 }
 
-.view-bets:hover{
-    transform: scale(1.05);
-}
 .footer{
     color: rgba(128, 128, 128, 0.614);
-    position: absolute;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    /* position: absolute; */
     bottom: 8px;
 }
 
@@ -175,14 +174,47 @@ table, th, td {
 th,td{
     text-align: center;
 }
-
+.bet-not-visible{
+    color: red;
+    font-size: 14px;
+}
 .tables{
-    display: flex;
+    /* display: flex; */
     margin-left: 8px;
     margin-right: 8px;
     gap: 16px;
 }
-
+.view-bet{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 12px;
+}
+#view-my-bet-button{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    padding: 8px 16px;
+    background-color: #D23369;
+    color:  white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out ;
+    border: none !important;
+    border-radius: 0;
+    font-size: 16px;
+}
+.view-bet-with-username{
+    display: inline; 
+    outline: none; 
+    background-color: transparent; 
+    border: 1px solid grey;
+    font-size: 10px;
+}
+.view-bet-with-username:focus{
+    background-color: rgba(255, 216, 222, 0.282);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
+}
 @media only all and (max-width: 900px){
     body{
         overflow-x: hidden !important;
@@ -232,6 +264,9 @@ th,td{
         object-position: 50% 50%;
     }
     .place-bet{
-        font-size: 14fpx;
+        font-size: 12px;
+    }
+    #view-my-bet-button{
+        font-size: 12px;
     }
 }

@@ -1,23 +1,34 @@
 import { getDatabase,ref,set,onValue } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 // import axios from 'axios'; 
 
-//info to be set manually since api not working
-let nextMatchStart = "21:30:00";
-let country1 = "Portugal";
-let country2 = "Ghana";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/VJQ1emg0TOubjGnap4vWuw_96x96.png";
+// info to be set manually since api not working
+// also set script and css version so it loads different
+let nextMatchStart = "21:30:00"; 
+let country1 = "Netherlands";
+let country2 = "Ecuador";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/8GEqzfLegwFFpe6X2BODTg_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/AKqvkBpIyr-iLOK7Ig7-yQ_96x96.png";
 
 
 
 let canBet = true;
 var time = new Date();
-let curTime = (time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+let curTime = (time.getHours() + ":" + String(time.getMinutes()).padStart(2, '0')  + ":" + time.getSeconds());
+// console.log(curTime);
+
 
 if(curTime>nextMatchStart){
     canBet = false;
+    
+    document.querySelector('.tables').style.display = "flex";
+    document.querySelector('.bet-not-visible').style.display='none';
 }
-
+else{
+    document.querySelector('.bet-not-visible').style.display='block';
+}
+if(canBet == false){
+    document.querySelector('.giffy').style.display = 'none';
+}
 const setMatchInfo = async () => {
     document.querySelectorAll('.country-1-name').forEach((x) => {
         x.innerHTML = country1;
@@ -113,14 +124,15 @@ const userToPassword = {
     "aryan":"bitchmallu69",
     "pratyush":"xyz",
     "manan":"ilovemallus",
-    "ankur":"xyz",
+    "ankur":"mallu123",
     "boidushya":"password1234",
     "dev":"sexymallu69",
     "drumil":"xyz",
     "jayesh":"ashinmom12",
     "rahul":"xyz",
     "rohan":"ashin69",
-    "kartik":"xyz"
+    "kartik":"ashinbabyanalsex",
+    "ayush" : "ashinsabu"
 }
 
 const placebet = (user,betAmt,team) => {
@@ -146,6 +158,9 @@ document.querySelectorAll('#amount-dropdown').forEach((betAmountDropDown) => {
 document.querySelectorAll('.submit-bet').forEach((betButton) => {
     betButton.addEventListener('click',() => {
         // console.log(betButton.dataset.betteam);
+        if(curTime>nextMatchStart){
+            canBet = false;
+        }
         if(canBet == false){
             document.querySelector('#message-1').innerHTML = "Can't bet now";
             return;
