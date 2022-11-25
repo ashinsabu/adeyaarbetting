@@ -9,7 +9,7 @@
     <meta http-equiv="Expires" content="-1" />
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css?2">
+    <link rel="stylesheet" href="style.css?4">
     <title>AdeYaarBet</title>
 </head>
 <body>
@@ -130,10 +130,13 @@
             </div>
             <button id="view-my-bet-button">View My Bet</button>
         </div>
-        <div class="bet"></div>
+        <div class="result-area">
+            <div class="view-bet-result" style="display: none;"></div>
+        </div>
+       
     </div>
     
-    <div class="current-bets">Final Bets</div>
+    <div class="final-bets">Final Bets</div>
     <p class="bet-not-visible">Match has not started</p>
     <div class="tables" style="display: none;">
         
@@ -190,7 +193,7 @@
     </script>
     <script type="module" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script src ="script.js" type="module"></script>
+    <script src ="script.js?3" type="module"></script>
 
 </body>
 </html>

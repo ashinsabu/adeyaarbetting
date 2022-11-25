@@ -1,13 +1,13 @@
-import { getDatabase,ref,set,onValue } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
+import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 // import axios from 'axios'; 
 
 // info to be set manually since api not working
 // also set script and css version so it loads different
-let nextMatchStart = "21:30:00"; 
-let country1 = "Netherlands";
-let country2 = "Ecuador";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/8GEqzfLegwFFpe6X2BODTg_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/AKqvkBpIyr-iLOK7Ig7-yQ_96x96.png";
+let nextMatchStart = "00:30:00"; 
+let country1 = "England";
+let country2 = "USA";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/wj9uZvn_vZrelLFGH8fnPA_96x96.png";
 
 
 
@@ -16,10 +16,11 @@ var time = new Date();
 let curTime = (time.getHours() + ":" + String(time.getMinutes()).padStart(2, '0')  + ":" + time.getSeconds());
 // console.log(curTime);
 
-
-if(curTime>nextMatchStart){
+let betTimePassed = false;
+// (curTime>nextMatchStart)?true:false;
+if(betTimePassed){
     canBet = false;
-    
+    document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
     document.querySelector('.bet-not-visible').style.display='none';
 }
@@ -132,7 +133,8 @@ const userToPassword = {
     "rahul":"xyz",
     "rohan":"ashin69",
     "kartik":"ashinbabyanalsex",
-    "ayush" : "ashinsabu"
+    "ayush" : "ashinsabu",
+    "test" : "lol"
 }
 
 const placebet = (user,betAmt,team) => {
@@ -378,6 +380,46 @@ const getNextMatchInfo = async () => {
     });
 
 }
+
+const viewMyBet = async (username,password) => {
+    if(userToPassword[username] != password)
+        return;
+    
+    const db = ref(getDatabase());
+
+    get(child(db, `bets/${username}`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        console.log(snapshot.val());
+        const data=snapshot.val();
+        document.querySelector('.view-bet-result').classList.remove('wrong-creds-for-view');
+        
+        document.querySelector('.view-bet-result').innerHTML="<h7 style = 'color: green'>🤑Your Bet🤑</h7> <p><span style = 'color: grey'>Name: </span>" + username.charAt(0).toUpperCase() + username.slice(1) + 
+        "</p><p><span style = 'color: grey'>Bet Amount: </span>₹"  + data.betAmt + "</p><p><span style = 'color: grey'>Team: </span>" + (data.team == 1?country1:country2)+"</p>";
+
+      } else {
+        document.querySelector('.view-bet-result').innerHTML="";
+        document.querySelector('.view-bet-result').innerText = "You have not placed a bet."
+      }
+    }).catch((error) => {
+      console.error(error);
+    });
+}
+
+
+document.querySelector('#view-my-bet-button').addEventListener('click', () => {
+    document.querySelector('.view-bet-result').style.display = 'flex';
+    let username = document.querySelector('.viewbet-username').value;
+    let password = document.querySelector('.viewbet-password').value;
+
+    if(userToPassword[username] == password){
+        viewMyBet(username,password);   
+    }
+    else{
+        document.querySelector('.view-bet-result').innerHTML="";
+        document.querySelector('.view-bet-result').classList.add('wrong-creds-for-view');
+        document.querySelector('.view-bet-result').innerText = "Wrong Credentials."
+    }
+})
 // const loadNextMatchInfo = async () => {
 // 	// toggleModal();
 // 	const res = await getNextMatchInfo();
