@@ -1,35 +1,39 @@
 import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 // import axios from 'axios'; 
 
+// TODO:  
 // info to be set manually since api not working
 // also set script and css version so it loads different
+
 let nextMatchStart = "00:30:00"; 
-let country1 = "England";
-let country2 = "USA";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/wj9uZvn_vZrelLFGH8fnPA_96x96.png";
+let country1 = "Argentina";
+let country2 = "Mexico";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_96x96.png";
 
 
 
 let canBet = true;
 var time = new Date();
-let curTime = (time.getHours() + ":" + String(time.getMinutes()).padStart(2, '0')  + ":" + time.getSeconds());
-// console.log(curTime);
+let curTime = (String(time.getHours()).padStart(2, '0') + ":" + String(time.getMinutes()).padStart(2, '0')  + ":" + String(time.getSeconds()).padStart(2, '0'));
 
-let betTimePassed = false;
-// (curTime>nextMatchStart)?true:false;
-if(betTimePassed){
+// console.log(curTime, nextMatchStart, (curTime > nextMatchStart));
+
+
+
+if(curTime > nextMatchStart){
+// if(false){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
     document.querySelector('.bet-not-visible').style.display='none';
+    document.querySelector('.giffy').style.display = 'none';
 }
 else{
     document.querySelector('.bet-not-visible').style.display='block';
+    // document.querySelector('.reveal-betters').style.display='block';
 }
-if(canBet == false){
-    document.querySelector('.giffy').style.display = 'none';
-}
+
 const setMatchInfo = async () => {
     document.querySelectorAll('.country-1-name').forEach((x) => {
         x.innerHTML = country1;
@@ -51,10 +55,13 @@ else{
     document.querySelector('.open-close-status').classList.remove("open");
     document.querySelector('.open-close-status').classList.add("closed");
 }
+
+const getBetObjsFromData = (betData) =>{
+    return;
+}
+
 const updateTables = (betData) => {
-    document.querySelectorAll('.betRecord').forEach((x)=>{
-        x.remove();
-    })
+    
     let total1 = 0,total2=0;
     let betObjs = [];
 
@@ -82,6 +89,9 @@ const updateTables = (betData) => {
 
     // use betObjs and totals now to populate tables 
     // betObj schema - name,betAmt,team
+    document.querySelectorAll('.betRecord').forEach((x)=>{
+        x.remove();
+    });
 
     let table1 = document.querySelector('.team1-table');
     let table2 = document.querySelector('.team2-table');
@@ -102,6 +112,8 @@ const updateTables = (betData) => {
             betRecordWin.textContent = ((Math.round(((betObjs[i].betAmt)*total1/total2) * 100) / 100).toFixed(2)).toString();
         betRecord.append(betRecordName,betRecordAmt,betRecordWin);
         // console.log(table1);
+        if(betRecordAmt.innerText == '0')
+            continue;
         if(betObjs[i].team == 1)
             table1.append(betRecord);
         if(betObjs[i].team == 2)
@@ -110,12 +122,74 @@ const updateTables = (betData) => {
     }
 }
 
-const startObserver = () =>{
+const updateRevealedList = (betData) => {
+
+    let total1 = 0, total2=0;
+    let betNames = [];
+
+    for (const prop in betData) {
+        let name = `${prop}`.charAt(0).toUpperCase() + `${prop}`.slice(1);
+        let team = parseInt(`${betData[prop].team}`,10);
+
+        // if(team == 1)
+        //     total1 += betAmt;
+        // if(team == 2)
+        //     total2 +=betAmt;
+        betNames.push(name);
+    }
+
+    let area = document.querySelector('.revealed-betters');
+
+    for (let i = 0;i<betNames.length;i++){
+        let ele = document.createElement('p');
+        ele.innerText = betNames[i];
+        area.append(ele);
+    }
+    
+}
+
+const updateBetStatus = (betData) => {
+    document.querySelector('.bet-status-row').innerHTML='';
+    let betObjs = {};
+    for (const prop in betData) {
+        //str.charAt(0).toUpperCase() + str.slice(1)
+        let name = `${prop}`;
+        let betAmt = parseInt(`${betData[prop].betAmt}`,10);
+
+        
+        betObjs[name]=betAmt;
+    }
+    
+    for ( const prop in userToPassword) {
+        let betStatusEle = document.createElement('div');
+        betStatusEle.className = 'bet-status';
+
+        let betStatusName = document.createElement('p');
+        let betStatusTick = document.createElement('p');
+
+        betStatusName.innerText = `${prop}`.charAt(0).toUpperCase() + `${prop}`.slice(1);
+        
+        if(betObjs[`${prop}`] > 0) {
+            betStatusTick.innerText = '✔️';
+        }
+        else{
+            betStatusTick.innerText = '❌';
+        }
+
+        betStatusEle.append(betStatusName,betStatusTick);
+
+        document.querySelector('.bet-status-row').append(betStatusEle);
+
+    }
+}
+const startObserver = () => {
     const db = getDatabase();
     const betRef = ref(db, 'bets');
     onValue(betRef, (snapshot) => {
         const data = snapshot.val();
         updateTables(data);
+        // updateRevealedList(data);
+        updateBetStatus(data);
     });
 }
 
@@ -134,7 +208,6 @@ const userToPassword = {
     "rohan":"ashin69",
     "kartik":"ashinbabyanalsex",
     "ayush" : "ashinsabu",
-    "test" : "lol"
 }
 
 const placebet = (user,betAmt,team) => {
@@ -160,9 +233,9 @@ document.querySelectorAll('#amount-dropdown').forEach((betAmountDropDown) => {
 document.querySelectorAll('.submit-bet').forEach((betButton) => {
     betButton.addEventListener('click',() => {
         // console.log(betButton.dataset.betteam);
-        if(curTime>nextMatchStart){
-            canBet = false;
-        }
+        // if(curTime>nextMatchStart){
+        //     canBet = false;
+        // }
         if(canBet == false){
             document.querySelector('#message-1').innerHTML = "Can't bet now";
             return;

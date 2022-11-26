@@ -11,7 +11,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 ol, ul {
     list-style: none;
 }
-  
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -46,6 +47,7 @@ body{
 .closed{
     color: red;
 }
+
 .match-info{
     margin-top: 4vh;
     margin-left: 3vh;
@@ -55,12 +57,46 @@ body{
 }
 
 .teambox{
-    
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
+}
+.watch-match{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    padding: 4px 4px;
+    background-color: #D23369;
+    color:  white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out ;
+    border: none !important;
+    border-radius: 0;
+    font-size: 10px;
+    width: fit-content;
+}
+.watch-match:hover{
+    transform: scale(0.95);
+    background-color: #0B5ED7;
+}
+.reveal-betters{
+    margin-top: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    padding: 8px 32px;
+    background-color: #D23369;
+    color:  white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out ;
+    border: none !important;
+    border-radius: 0;
+    font-size: 10px;
+    width: fit-content;
+}
+.reveal-betters:hover{
+    transform: scale(0.95);
+    background-color: #0B5ED7;
 }
 .vs{
     flex: 1;
@@ -193,6 +229,7 @@ th,td{
     align-items: center;
     font-size: 12px;
 }
+
 #view-my-bet-button{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
@@ -250,6 +287,18 @@ th,td{
 .wrong-creds-for-view{
     color: red;
     font-size: 12px;
+}
+.bet-status-row{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bet-status > p{
+    width: 8vh;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
 }
 @media only all and (max-width: 900px){
     body{
