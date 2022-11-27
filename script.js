@@ -5,11 +5,11 @@ import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/f
 // info to be set manually since api not working
 // also set script and css version so it loads different
 
-let nextMatchStart = "00:30:00"; 
-let country1 = "Argentina";
-let country2 = "Mexico";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_96x96.png";
+let nextMatchStart = "21:30:00"; 
+let country1 = "Croatia";
+let country2 = "Canada";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/H23oIEP6qK-zNc3O8abnIA_96x96.png";
 
 
 
