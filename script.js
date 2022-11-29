@@ -7,16 +7,19 @@ import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/f
 
 let fixt=1;
 
+let imgLinks = {
+    iran: ""
+}
 let nextMatchStart = "00:30:00"; 
-let country1 = "Ecuador ";
-let country2 = "Senegal";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/AKqvkBpIyr-iLOK7Ig7-yQ_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_96x96.png";
+let country1 = "Iran ";
+let country2 = "USA";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/1oq8Fy7ETpBpZNaCA22ArQ_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/wj9uZvn_vZrelLFGH8fnPA_96x96.png";
 
-let country3 = "Netherlands";
-let country4 = "Qatar";
-let country3Img = "https://ssl.gstatic.com/onebox/media/sports/logos/8GEqzfLegwFFpe6X2BODTg_96x96.png";
-let country4Img = "https://ssl.gstatic.com/onebox/media/sports/logos/h0FNA5YxLzWChHS5K0o4gw_96x96.png";
+let country3 = "Wales";
+let country4 = "England";
+let country3Img = "https://ssl.gstatic.com/onebox/media/sports/logos/1JjnDm6Es30LryHzbudyEw_96x96.png";
+let country4Img = "https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png";
 
 let canBet = true;
 var time = new Date();
@@ -26,8 +29,8 @@ let curTime = (String(time.getHours()).padStart(2, '0') + ":" + String(time.getM
 
 
 
-if(curTime > nextMatchStart){
-// if(false){
+// if(curTime > nextMatchStart){
+if(false){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
@@ -219,40 +222,61 @@ let fixtureSelector = document.getElementById('select-fixture');
 
 const startObserver = () => {
     const db = getDatabase();
-    const betRef = ref(db);
-    onValue(betRef, (snapshot) => {
+    
+    const bet1Ref = ref(db,'bets/');
+    const bet2Ref = ref(db,'bets2/')
+    onValue(bet1Ref, (snapshot) => {
+        // if(snapshot.val()){
         const data = snapshot.val();
         // console.log(data['bets']);
         if(fixt == 1){
-            updateTables(data['bets']);
+            updateTables(data);
             // updateRevealedList(data);
-            updateBetStatus(data['bets']);
-        }
-        else if(fixt == 2){
-            updateTables(data['bets2']);
-            // updateRevealedList(data);
-            updateBetStatus(data['bets2']);
+            updateBetStatus(data);
         }
         
         return data;
+        // }
+    });
+    onValue(bet2Ref, (snapshot) => {
+        // if(snapshot.val()){
+        const data = snapshot.val();
+        // console.log(data['bets']);
+        if(fixt == 2){
+            updateTables(data);
+            // updateRevealedList(data);
+            updateBetStatus(data);
+        }
+        
+        return data;
+        // }
     });
     fixtureSelector.addEventListener('change', () => {
-        const betRef = ref(db);
-        onValue(betRef, (snapshot) => {
+        onValue(bet1Ref, (snapshot) => {
+            // if(snapshot.val()){
             const data = snapshot.val();
             // console.log(data['bets']);
-            if(fixtureSelector.value == 1){
-                updateTables(data['bets']);
+            if(fixt == 1){
+                updateTables(data);
                 // updateRevealedList(data);
-                updateBetStatus(data['bets']);
-            }
-            else if(fixtureSelector.value == 2){
-                updateTables(data['bets2']);
-                // updateRevealedList(data);
-                updateBetStatus(data['bets2']);
+                updateBetStatus(data);
             }
             
             return data;
+            // }
+        });
+        onValue(bet2Ref, (snapshot) => {
+            // if(snapshot.val()){
+            const data = snapshot.val();
+            // console.log(data['bets']);
+            if(fixt == 2){
+                updateTables(data);
+                // updateRevealedList(data);
+                updateBetStatus(data);
+            }
+            
+            return data;
+            // }
         });
     })
 }
