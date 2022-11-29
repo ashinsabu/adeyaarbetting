@@ -5,13 +5,18 @@ import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/f
 // info to be set manually since api not working
 // also set script and css version so it loads different
 
-let nextMatchStart = "21:30:00"; 
-let country1 = "Croatia";
-let country2 = "Canada";
-let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_96x96.png";
-let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/H23oIEP6qK-zNc3O8abnIA_96x96.png";
+let fixt=1;
 
+let nextMatchStart = "00:30:00"; 
+let country1 = "Ecuador ";
+let country2 = "Senegal";
+let country1Img = "https://ssl.gstatic.com/onebox/media/sports/logos/AKqvkBpIyr-iLOK7Ig7-yQ_96x96.png";
+let country2Img = "https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_96x96.png";
 
+let country3 = "Netherlands";
+let country4 = "Qatar";
+let country3Img = "https://ssl.gstatic.com/onebox/media/sports/logos/8GEqzfLegwFFpe6X2BODTg_96x96.png";
+let country4Img = "https://ssl.gstatic.com/onebox/media/sports/logos/h0FNA5YxLzWChHS5K0o4gw_96x96.png";
 
 let canBet = true;
 var time = new Date();
@@ -34,15 +39,32 @@ else{
     // document.querySelector('.reveal-betters').style.display='block';
 }
 
-const setMatchInfo = async () => {
-    document.querySelectorAll('.country-1-name').forEach((x) => {
-        x.innerHTML = country1;
-    })
-    document.querySelectorAll('.country-2-name').forEach((x) => {
-        x.innerHTML = country2;
-    })
-    document.querySelector('.team-flag1').src = country1Img;
-    document.querySelector('.team-flag2').src = country2Img;
+const setMatchInfo = async (fixt) => {
+
+    document.querySelector('.fixt1').innerText = country1 + " vs. " + country2;
+    document.querySelector('.fixt2').innerText = country3 + " vs. " + country4;
+
+
+    if(fixt == 1){
+        document.querySelectorAll('.country-1-name').forEach((x) => {
+            x.innerHTML = country1;
+        })
+        document.querySelectorAll('.country-2-name').forEach((x) => {
+            x.innerHTML = country2;
+        })
+        document.querySelector('.team-flag1').src = country1Img;
+        document.querySelector('.team-flag2').src = country2Img;
+    }
+    else if (fixt == 2){
+        document.querySelectorAll('.country-1-name').forEach((x) => {
+            x.innerHTML = country3;
+        })
+        document.querySelectorAll('.country-2-name').forEach((x) => {
+            x.innerHTML = country4;
+        })
+        document.querySelector('.team-flag1').src = country3Img;
+        document.querySelector('.team-flag2').src = country4Img;
+    }
 }
 
 if(canBet){
@@ -159,7 +181,8 @@ const updateBetStatus = (betData) => {
         
         betObjs[name]=betAmt;
     }
-    
+    let ticks =[];
+    let wrongs = [];
     for ( const prop in userToPassword) {
         let betStatusEle = document.createElement('div');
         betStatusEle.className = 'bet-status';
@@ -178,44 +201,94 @@ const updateBetStatus = (betData) => {
 
         betStatusEle.append(betStatusName,betStatusTick);
 
-        document.querySelector('.bet-status-row').append(betStatusEle);
-
+        if(betStatusTick.innerText == '✔️')
+            ticks.push(betStatusEle);
+        else if(betStatusTick.innerText == '❌')
+            wrongs.push(betStatusEle);
     }
+    for (let i = 0;i<ticks.length;i++){
+        document.querySelector('.bet-status-row').append(ticks[i]);
+    }
+    for (let i = 0;i<wrongs.length;i++){
+        document.querySelector('.bet-status-row').append(wrongs[i]);
+    }
+
 }
+
+let fixtureSelector = document.getElementById('select-fixture');
+
 const startObserver = () => {
     const db = getDatabase();
-    const betRef = ref(db, 'bets');
+    const betRef = ref(db);
     onValue(betRef, (snapshot) => {
         const data = snapshot.val();
-        updateTables(data);
-        // updateRevealedList(data);
-        updateBetStatus(data);
+        // console.log(data['bets']);
+        if(fixt == 1){
+            updateTables(data['bets']);
+            // updateRevealedList(data);
+            updateBetStatus(data['bets']);
+        }
+        else if(fixt == 2){
+            updateTables(data['bets2']);
+            // updateRevealedList(data);
+            updateBetStatus(data['bets2']);
+        }
+        
+        return data;
     });
+    fixtureSelector.addEventListener('change', () => {
+        const betRef = ref(db);
+        onValue(betRef, (snapshot) => {
+            const data = snapshot.val();
+            // console.log(data['bets']);
+            if(fixtureSelector.value == 1){
+                updateTables(data['bets']);
+                // updateRevealedList(data);
+                updateBetStatus(data['bets']);
+            }
+            else if(fixtureSelector.value == 2){
+                updateTables(data['bets2']);
+                // updateRevealedList(data);
+                updateBetStatus(data['bets2']);
+            }
+            
+            return data;
+        });
+    })
 }
-
 
 const userToPassword = {
     "ashin":"messifan",
     "aryan":"bitchmallu69",
-    "pratyush":"xyz",
+    "pratyush":"betxyz",
     "manan":"ilovemallus",
     "ankur":"mallu123",
     "boidushya":"password1234",
     "dev":"sexymallu69",
     "drumil":"xyz",
     "jayesh":"ashinmom12",
-    "rahul":"xyz",
+    "rahul":"ankurlodu",
     "rohan":"ashin69",
     "kartik":"ashinbabyanalsex",
     "ayush" : "ashinsabu",
+    "rishikesh" : "rishikesh",
 }
 
-const placebet = (user,betAmt,team) => {
+const placebet = (fixt,user,betAmt,team) => {
     const db = getDatabase();
-    set(ref(db,'bets/'+user),{
-        team: team,
-        betAmt: betAmt
-    })
+
+    if(fixt == 1){
+        set(ref(db,'bets/'+user),{
+            team: team,
+            betAmt: betAmt
+        })
+    }
+    else{
+        set(ref(db,'bets2/'+user),{
+            team: team,
+            betAmt: betAmt
+        })
+    }
 } 
 
 document.querySelectorAll('#amount-dropdown').forEach((betAmountDropDown) => {
@@ -240,6 +313,7 @@ document.querySelectorAll('.submit-bet').forEach((betButton) => {
             document.querySelector('#message-1').innerHTML = "Can't bet now";
             return;
         }
+        let chosenMatch = ((fixt==1)?1:2);
         if(betButton.dataset.betteam == 1){
             let username = (document.querySelector("#username1").value).toString();
             let password = document.querySelector("#password1").value;
@@ -251,7 +325,7 @@ document.querySelectorAll('.submit-bet').forEach((betButton) => {
             if(userToPassword[username] == password){
                 document.querySelector('#message-1').style.color = "grey";
                 document.querySelector('#message-1').innerHTML = "Placing...";
-                placebet(username,betAmount,1);
+                placebet(fixt,username,betAmount,1);
                 setTimeout(() => {
                     location.reload();
                 },1000)
@@ -273,7 +347,7 @@ document.querySelectorAll('.submit-bet').forEach((betButton) => {
             if(userToPassword[username] == password){
                 document.querySelector('#message-1').style.color = "grey";
                 document.querySelector('#message-1').innerHTML = "Placing...";
-                placebet(username,betAmount,2);
+                placebet(fixt,username,betAmount,2);
                 setTimeout(() => {
                     location.reload();
                 },1000)
@@ -493,6 +567,11 @@ document.querySelector('#view-my-bet-button').addEventListener('click', () => {
         document.querySelector('.view-bet-result').innerText = "Wrong Credentials."
     }
 })
+
+fixtureSelector.addEventListener('change' , (e) => {
+    fixt = fixtureSelector.value;
+    setMatchInfo(fixt);
+})
 // const loadNextMatchInfo = async () => {
 // 	// toggleModal();
 // 	const res = await getNextMatchInfo();
@@ -500,6 +579,6 @@ document.querySelector('#view-my-bet-button').addEventListener('click', () => {
 
 // 	// toggleStatus();
 // };
-setMatchInfo();
+setMatchInfo(fixt);
 startObserver();
 // getNextMatchInfo();

@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css?1">
     <link rel="icon" type="image/x-icon" href="assets/icon.ico">
-    <title>AdeYaarBet</title>
+    <title>AdeYaarBet: FIFA 2022 Betting</title>
 </head>
 <body>
     <div class="header">
@@ -24,6 +24,13 @@
         src="https://i.kym-cdn.com/photos/images/newsfeed/001/838/708/ae9.gif"
     />
     <h3 class="open-close-status open">Betting OPEN</h3>
+    <div class="choose-fixture">
+        <p style="text-align: center;">Choose match to bet on/view bets</p>
+        <select id="select-fixture">
+            <option class="fixt1" value="1">1</option>
+            <option class="fixt2" value="2">2</option>
+        </select>
+    </div>
     <div class="match-info">
         <div class="team-1 teambox">
             <p class="country-name country-1-name"></p>
@@ -74,7 +81,7 @@
         </div>
         <div class="vs">
             VS.
-            <a href="https://www.jiocinema.com/sports" target="_blank"><div class="watch-match">Watch Live</div></a>
+            <a href="https://www.jiocinema.com/sports" target="_blank" rel="nofollow"><div class="watch-match">Watch Live</div></a>
         </div>
         <div class="team-2 teambox">
             <p class="country-name country-2-name"></p>
@@ -193,8 +200,10 @@
             </table>
         </div>
     </div>
-    <a href="help.html" style="margin-top: 32px;">Click here for instructions</a>
+    <a href="help.html" style="margin-top: 32px; text-align: center;">Click here for instructions</a>
     <div class="footer">Made with ❤️ by Ashin, Boidushya, Jayesh</div>
+    <p style="text-align: center;"><a style="text-align: center; font-size: 12px; color: blue;" href="privacypolicy.html">Privacy Policy</a></p>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

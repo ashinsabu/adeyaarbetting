@@ -303,6 +303,21 @@ th,td{
 .help-container{
     text-align: center;
 }
+.privacy-policy-container{
+    margin-left: 8vh;
+    margin-right: 8vh;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: 2vh;
+}
+.choose-fixture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 @media only all and (max-width: 900px){
     body{
         overflow-x: hidden !important;
