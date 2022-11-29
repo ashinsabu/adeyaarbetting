@@ -556,15 +556,16 @@ const viewMyBet = async (username,password) => {
         return;
     
     const db = ref(getDatabase());
+    let suffixforfixt = (fixt==2)?'2':'';
 
-    get(child(db, `bets/${username}`)).then((snapshot) => {
+    get(child(db, `bets${suffixforfixt}/${username}`)).then((snapshot) => {
       if (snapshot.exists()) {
-        console.log(snapshot.val());
+        // console.log(snapshot.val());
         const data=snapshot.val();
         document.querySelector('.view-bet-result').classList.remove('wrong-creds-for-view');
         
         document.querySelector('.view-bet-result').innerHTML="<h7 style = 'color: green'>🤑Your Bet🤑</h7> <p><span style = 'color: grey'>Name: </span>" + username.charAt(0).toUpperCase() + username.slice(1) + 
-        "</p><p><span style = 'color: grey'>Bet Amount: </span>₹"  + data.betAmt + "</p><p><span style = 'color: grey'>Team: </span>" + (data.team == 1?country1:country2)+"</p>";
+        "</p><p><span style = 'color: grey'>Bet Amount: </span>₹"  + data.betAmt + "</p><p><span style = 'color: grey'>Team: </span>" + ((fixt==1)?(data.team == 1?country1:country2):(data.team == 1?country3:country4))+"</p>";
 
       } else {
         document.querySelector('.view-bet-result').innerHTML="";
