@@ -9,26 +9,51 @@ let fixt=1;
 
 import imgLinks from './flagLinks.js';
 
-let nextMatchStart = "00:30:00"; 
-let country1 = "Iran ";
-let country2 = "USA";
-let country1Img = imgLinks['iran'];
-let country2Img = imgLinks['usa'];
+let nextMatchStart = "23:59:00"; 
+let nextMatchStartQatarTime = "22:00:00";
+let country1 = "Poland ";
+let country2 = "Argentina";
+let country1Img = imgLinks['poland'];
+let country2Img = imgLinks['argentina'];
 
-let country3 = "Wales";
-let country4 = "England";
-let country3Img = imgLinks['wales'];
-let country4Img = imgLinks['england'];
+let country3 = "Saudi Arabia";
+let country4 = "Mexico";
+let country3Img = imgLinks['saudi'];
+let country4Img = imgLinks['mexico'];
+
 
 let canBet = true;
 var time = new Date();
 let curTime = (String(time.getHours()).padStart(2, '0') + ":" + String(time.getMinutes()).padStart(2, '0')  + ":" + String(time.getSeconds()).padStart(2, '0'));
 
+function changeTimezone(date, ianatz) {
+
+    // suppose the date is 12:00 UTC
+    var invdate = new Date(date.toLocaleString('en-US', {
+      timeZone: ianatz
+    }));
+  
+    // then invdate will be 07:00 in Toronto
+    // and the diff is 5 hours
+    var diff = date.getTime() - invdate.getTime();
+  
+    // so 12:00 in Toronto is 17:00 UTC
+    return new Date(date.getTime() - diff); // needs to substract
+  
+  }
+  
+  // E.g.
+  var ourTime = new Date();
+  var there = changeTimezone(ourTime, "Asia/Qatar");
+
+// console.log((String(ourTime.getHours()).padStart(2, '0') + ":" + String(ourTime.getMinutes()).padStart(2, '0')  + ":" + String(ourTime.getSeconds()).padStart(2, '0')));
+let qatarTime = ((String(there.getHours()).padStart(2, '0') + ":" + String(there.getMinutes()).padStart(2, '0')  + ":" + String(there.getSeconds()).padStart(2, '0')));
+
 // console.log(curTime, nextMatchStart, (curTime > nextMatchStart));
 
 
 
-if(curTime > nextMatchStart){
+if(qatarTime > nextMatchStartQatarTime){
 // if(false){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
