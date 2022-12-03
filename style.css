@@ -21,7 +21,9 @@ img {
 a{
     text-decoration: none;
 }
-
+marquee{
+    z-index: -20;
+}
 body{
     background-color: #f062911f;
     display: flex;
