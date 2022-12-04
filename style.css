@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* CSS RESET */  
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -305,10 +306,11 @@ th,td{
     outline: none; 
     background-color: transparent; 
     border: 1px solid grey;
-    font-size: 14px;
+    font-size: 14px !important;
+    padding: 4px;
 }
 .other-bet-credential:focus{
-    background-color: rgba(255, 216, 222, 0.282);
+    /* background-color: rgba(0, 0, 0, 0.282); */
     box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
 }
 .result-area{
@@ -368,6 +370,7 @@ th,td{
 .tournament-winner-selector-area{
     gap: 8px;
     display: flex;
+    flex-direction: column;
     margin-left: 4vw;
     margin-right: 4vw;
 }
@@ -397,6 +400,61 @@ th,td{
 .tournament-winner-submit:active{
     background-color: #2A3990;
     transform: scale(0.97);
+}
+.accordion-container{
+    width: 90vw;
+    margin-top: 16px;
+}
+.place-tournament-winner-toggle-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 60vw;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    padding: 8px 16px;
+    /* background-color: #E7D27C; */
+    background-color: #D23369;
+    color:  white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out ;
+    border: none !important;
+    border-radius: 0;
+}
+.place-other-bet-modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion-body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bet-place-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myObj1, .count-up-amount{
+    display: inline;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: green;
+}
+.count-up-amount{
+    margin-bottom: 8px;
+    /* background-color: a */
+    padding: 8px;
+    
+}
+.count-up-amount >h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+.totalpooltitle{
+    margin-top: -12px;
 }
 @media only all and (max-width: 900px){
     body{
@@ -457,5 +515,11 @@ th,td{
     }
     .view-bet-with-username{
         font-size: 10px;
+    }
+    .other-bet-credential{
+        font-size: 14px !important;
+    }
+    .totalpooltitle{
+        margin-top: -12px;
     }
 }
