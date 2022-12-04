@@ -17,5 +17,7 @@ Technologies: JavaScript, Firebase, CSS(+Bootstrap for some Components), HTML
 
 # Screenshots
 
+
 <img src="https://media.discordapp.net/attachments/1048733444735238204/1048733473743065168/image.png?width=282&height=585">
+<img src ="https://cdn.discordapp.com/attachments/1048733444735238204/1048736779349540944/image.png">
 <img src="https://media.discordapp.net/attachments/1048733444735238204/1048735778303389716/image.png?width=380&height=585">
