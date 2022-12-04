@@ -32,6 +32,8 @@ let qFinalTeams = [
     },
 ]
 
+
+
 // UTILITY AND USEFUL FUNCTIONS 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -82,7 +84,23 @@ const submitTournamentBet = (user, team, amount) => {
 
 // GLOBAL EVENT LISTENERS
 document.querySelector('.tournament-winner-submit').addEventListener('click',() => {
-    
+    document.querySelector('.other-bet-message').innerHTML = '';
+    document.querySelector('.other-bet-message').style.color = 'grey';
+
+    let username = document.querySelector('.other-bet-username').value;
+    let password = document.querySelector('.other-bet-password').value;
+
+    if(userToPassword[username] == password){
+        document.querySelector('.other-bet-message').innerHTML = 'Submitting Bet...';
+        submitTournamentBet(username,document.querySelector('.tournament-winner-selector').value,document.querySelector('.tournament-winner-amount').value);
+        setTimeout(()=>{
+            location.reload();
+        },1000)
+    }
+    else{
+        document.querySelector('.other-bet-message').innerHTML = 'Wrong Credentials';
+        document.querySelector('.other-bet-message').style.color = 'red';
+    }
 })
 
 
@@ -136,7 +154,23 @@ const updateAccordions = (qFinalTeams) => {
         document.querySelector('.accordion').innerHTML += qFinalTeamsComponents[i];
     }
 }
-
+//
+const userToPassword = {
+    "ashin":"messifan",
+    "aryan":"bitchmallu69",
+    "pratyush":"betxyz",
+    "manan":"ilovemallus",
+    "ankur":"mallu123",
+    "boidushya":"password1234",
+    "dev":"sexymallu69",
+    "drumil":"xyz",
+    "jayesh":"ashinmom12",
+    "rahul":"ankurlodu",
+    "rohan":"ashin69",
+    "kartik":"ashinbabyanalsex",
+    "ayush" : "ashinsabu",
+    "rishikesh" : "rishikesh",
+}
 
 
 let MyCounter1 = new Counter(5,150);
