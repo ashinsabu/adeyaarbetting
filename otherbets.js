@@ -104,22 +104,42 @@ document.querySelector('.tournament-winner-submit').addEventListener('click',() 
 })
 
 
-// UPDATE DOM FUNCTIONS
-const updateBar = (qFinalTeams) => {
+// UPDATE DOM FUNCTIONS and direct updates
+for(let i=0;i<qFinalTeams.length;i++){
+    document.querySelector('.tournament-winner-selector').innerHTML += `<option value="${qFinalTeams[i].team}">${capitalizeFirstLetter(qFinalTeams[i].team)}</option>`
+}
+
+const updateBar = (qFinalTeams,objs) => { // also returns total bet
+    let total = 0;
+    let teamToAmount = {
+
+    };
+
+    for(let i =0;i<qFinalTeams.length;i++){
+        teamToAmount[qFinalTeams[i].team] = 0;
+    }
+
+    for(let i =0;i<objs.length;i++){
+        total+=objs[i].amt;
+        teamToAmount[objs[i].team]+=objs[i].amt;
+    }
+
+    document.querySelector('.progress').innerHTML = '';
     for(let i =0;i<qFinalTeams.length;i++){
         document.querySelector('.progress').innerHTML +=
-        `<div class="progress-bar ${qFinalTeams[i].team}" role="progressbar" style="width: ${100/qFinalTeams.length}%; background-color: ${qFinalTeams[i].color};" aria-valuenow="${100/qFinalTeams.length}" aria-valuemin="0" aria-valuemax="100"></div>
+        `<div class="progress-bar ${qFinalTeams[i].team}" role="progressbar" style="width: ${teamToAmount[qFinalTeams[i].team]*100/total}%; background-color: ${qFinalTeams[i].color};" aria-valuenow="${100/qFinalTeams.length}" aria-valuemin="0" aria-valuemax="100"></div>
         `
     }
+    // console.log(teamToAmount);
+    // console.log(total)
+    return total;
 }
 
-const updateAccordion = () => {
 
-}
 // submitTournamentBet("ashin","netherlands",50);
 
 
-const updateAccordions = (qFinalTeams) => {
+const updateAccordions = (qFinalTeams,objs) => {
     
     let qFinalTeamsComponents =  qFinalTeams.map((item,index)=>{
         return `<div class="accordion-item">
@@ -150,6 +170,7 @@ const updateAccordions = (qFinalTeams) => {
         </div>
         `;
     });
+    document.querySelector('.accordion').innerHTML = '';
     for(let i=0;i<qFinalTeamsComponents.length;i++){
         document.querySelector('.accordion').innerHTML += qFinalTeamsComponents[i];
     }
@@ -171,9 +192,40 @@ const userToPassword = {
     "ayush" : "ashinsabu",
     "rishikesh" : "rishikesh",
 }
-
+const getObjectsFromData = (data) => {
+    let objs = [];
+    for (const prop in data) {
+        let name = `${prop}`.charAt(0).toUpperCase() + `${prop}`.slice(1);
+        let amt = parseInt(`${data[prop].betAmt}`,10);
+        let team = `${data[prop].team}`;
+        objs.push(
+            {
+                name: name,
+                amt: amt,
+                team: team
+            }
+        )
+    }
+    return objs;
+}
 
 let MyCounter1 = new Counter(5,150);
-MyCounter1.runCounter("myObj1", 825, 875);
-updateAccordions(qFinalTeams);
-updateBar(qFinalTeams);
+
+const startObserver = () => {
+    const db = getDatabase();
+    
+    const betRef = ref(db,'tournamentBets/');
+    onValue(betRef, (snapshot) => {
+        const data = snapshot.val();
+        const objs = getObjectsFromData(data);
+        updateAccordions(qFinalTeams,objs);
+        const total = updateBar(qFinalTeams,objs);
+        console.log(objs);
+        MyCounter1.runCounter("myObj1", (total-50)>0?total-50:0, total);
+    });
+}
+
+
+// updateAccordions(qFinalTeams);
+// updateBar(qFinalTeams);
+startObserver();

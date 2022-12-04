@@ -10,7 +10,7 @@ let fixt=1;
 import imgLinks from './flagLinks.js';
 
 let nextMatchStart = "23:59:00"; 
-let nextMatchStartQatarTime = "22:00:00";
+let nextMatchStartQatarTime = "00:00:00";
 let country1 = "England";
 let country2 = "Senegal";
 let country1Img = imgLinks['england'];
@@ -275,34 +275,6 @@ const startObserver = () => {
         return data;
         // }
     });
-    // fixtureSelector.addEventListener('change', () => {
-    //     onValue(bet1Ref, (snapshot) => {
-    //         // if(snapshot.val()){
-    //         const data = snapshot.val();
-    //         // console.log(data['bets']);
-    //         if(fixt == 1){
-    //             updateTables(data);
-    //             // updateRevealedList(data);
-    //             updateBetStatus(data);
-    //         }
-            
-    //         return data;
-    //         // }
-    //     });
-    //     onValue(bet2Ref, (snapshot) => {
-    //         // if(snapshot.val()){
-    //         const data = snapshot.val();
-    //         // console.log(data['bets']);
-    //         if(fixt == 2){
-    //             updateTables(data);
-    //             // updateRevealedList(data);
-    //             updateBetStatus(data);
-    //         }
-            
-    //         return data;
-    //         // }
-    //     });
-    // })
 }
 
 const userToPassword = {
