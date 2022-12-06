@@ -1,6 +1,22 @@
 import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 
 let qFinalTeams = [
+    
+    {
+        team: "brazil",
+        color: "#0DA044",
+        teamNameColor: "#FEE009",
+        accHead: "panelsStayOpen-headingSix",
+        accColl: "panelsStayOpen-collapseSix",
+    },
+    
+    {
+        team: "argentina",
+        color: "#7EB2E1",
+        teamNameColor: "white",
+        accHead: "panelsStayOpen-headingTwo",
+        accColl: "panelsStayOpen-collapseTwo",
+    },
     {
         team: "netherlands",
         color: "#B22732",
@@ -8,13 +24,6 @@ let qFinalTeams = [
         accHead: "panelsStayOpen-headingOne",
         accColl: "panelsStayOpen-collapseOne",
         
-    },
-    {
-        team: "argentina",
-        color: "#7EB2E1",
-        teamNameColor: "white",
-        accHead: "panelsStayOpen-headingTwo",
-        accColl: "panelsStayOpen-collapseTwo",
     },
     {
         team: "france",
@@ -30,9 +39,16 @@ let qFinalTeams = [
         accHead: "panelsStayOpen-headingFour",
         accColl: "panelsStayOpen-collapseFour",
     },
+    {
+        team: "croatia",
+        color: "#FF0B0B",
+        teamNameColor: "white",
+        accHead: "panelsStayOpen-headingFive",
+        accColl: "panelsStayOpen-collapseFive",
+    },
 ]
 
-
+//things to update for last two teams update accordion and above list
 
 // UTILITY AND USEFUL FUNCTIONS 
 function capitalizeFirstLetter(string) {
@@ -139,8 +155,21 @@ const updateBar = (qFinalTeams,objs) => { // also returns total bet
 // submitTournamentBet("ashin","netherlands",50);
 
 
-const updateAccordions = (qFinalTeams,objs) => {
-    
+const updateAccordions = (qFinalTeams,objs,total) => {
+    console.log(objs);
+
+    let totals = {
+        netherlands: 0, 
+        argentina: 0, 
+        france: 0, 
+        england: 0, 
+        croatia: 0, 
+        brazil: 0
+    }
+    for(let i=0;i<objs.length;i++){
+        totals[`${objs[i].team}`] += objs[i].amt;
+    }
+
     let qFinalTeamsComponents =  qFinalTeams.map((item,index)=>{
         return `<div class="accordion-item">
         <h2 class="accordion-header" id="${item.accHead}">
@@ -151,18 +180,12 @@ const updateAccordions = (qFinalTeams,objs) => {
         <div id="${item.accColl}" class="accordion-collapse collapse" aria-labelledby="${item.accHead}">
           <div class="accordion-body ${item.team}-info">
               <p>Total Bet on ${capitalizeFirstLetter(item.team)}</p>
-              <h5 style="margin-bottom: 8px;" class="total-bet-on-team ${item.team}-total">₹150</h5>
+              <h5 style="margin-bottom: 8px;" class="total-bet-on-team ${item.team}-total">₹${totals[item.team]}</h5>
               <table class="${item.team}-table other-bet-team-table">
                   <tr>
                       <th>User</th>
                       <th>Bet Amt.</th>
                       <th>Possible Win</th>
-                  </tr>
-                  <tr>
-                      <td>Ashin</th>
-                      <td>50</th>
-                      <td>250</th>
-                  </tr>
                   </tr>
               </table>
           </div>
@@ -173,6 +196,18 @@ const updateAccordions = (qFinalTeams,objs) => {
     document.querySelector('.accordion').innerHTML = '';
     for(let i=0;i<qFinalTeamsComponents.length;i++){
         document.querySelector('.accordion').innerHTML += qFinalTeamsComponents[i];
+    }
+
+    for(let i=0;i<objs.length;i++){
+        let possibleWin = (objs[i].amt/totals[`${objs[i].team}`])*(total-totals[`${objs[i].team}`]);
+        // console.log((objs[i].amt/totals[`${objs[i].team}`])) 
+        document.querySelector(`.${objs[i].team}-table`).innerHTML += `
+        <tr>
+            <td>${objs[i].name}</td>
+            <td>₹${objs[i].amt}</td>
+            <td>₹${possibleWin}</td>
+        </tr>
+        `
     }
 }
 //
@@ -218,9 +253,10 @@ const startObserver = () => {
     onValue(betRef, (snapshot) => {
         const data = snapshot.val();
         const objs = getObjectsFromData(data);
-        updateAccordions(qFinalTeams,objs);
         const total = updateBar(qFinalTeams,objs);
-        console.log(objs);
+        // console.log(objs);
+        
+        updateAccordions(qFinalTeams,objs,total);
         MyCounter1.runCounter("myObj1", (total-50)>0?total-50:0, total);
     });
 }

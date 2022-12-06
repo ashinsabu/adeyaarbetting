@@ -456,6 +456,9 @@ th,td{
 .totalpooltitle{
     margin-top: -12px;
 }
+.other-bet-team-table th, .other-bet-team-table td{
+    font-size: 14px !important;
+}
 @media only all and (max-width: 900px){
     body{
         overflow-x: hidden !important;
@@ -521,5 +524,8 @@ th,td{
     }
     .totalpooltitle{
         margin-top: -12px;
+    }
+    .other-bet-team-table th, .other-bet-team-table td{
+        font-size: 12px !important;
     }
 }
