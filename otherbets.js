@@ -18,6 +18,13 @@ let qFinalTeams = [
         accColl: "panelsStayOpen-collapseTwo",
     },
     {
+        team: "portugal",
+        color: "#FDFD96",
+        teamNameColor: "black",
+        accHead: "panelsStayOpen-headingSeven",
+        accColl: "panelsStayOpen-collapseSeven",
+    },
+    {
         team: "netherlands",
         color: "#B22732",
         teamNameColor: "white",
@@ -31,11 +38,18 @@ let qFinalTeams = [
         teamNameColor: "white",
         accHead: "panelsStayOpen-headingThree",
         accColl: "panelsStayOpen-collapseThree",
+    },    
+    {
+        team: "morocco",
+        color: "#19653D",
+        teamNameColor: "#C43036",
+        accHead: "panelsStayOpen-headingSeven",
+        accColl: "panelsStayOpen-collapseSeven",
     },
     {
         team: "england",
         color: "white",
-        teamNameColor: "black",
+        teamNameColor: "red",
         accHead: "panelsStayOpen-headingFour",
         accColl: "panelsStayOpen-collapseFour",
     },
@@ -164,7 +178,9 @@ const updateAccordions = (qFinalTeams,objs,total) => {
         france: 0, 
         england: 0, 
         croatia: 0, 
-        brazil: 0
+        brazil: 0,
+        morocco: 0,
+        portugal: 0,
     }
     for(let i=0;i<objs.length;i++){
         totals[`${objs[i].team}`] += objs[i].amt;
@@ -204,6 +220,15 @@ const updateAccordions = (qFinalTeams,objs,total) => {
         document.querySelector(`.${objs[i].team}-table`).innerHTML += `
         <tr>
             <td>${objs[i].name}</td>
+            <td>₹${objs[i].amt}</td>
+            <td>₹${possibleWin}</td>
+        </tr>
+        `;
+        let teamNameInCaps = objs[i].team.charAt(0).toUpperCase() + objs[i].team.slice(1)
+        document.querySelector('.user-wise-table').innerHTML +=`
+        <tr>
+            <td>${objs[i].name}</td>
+            <td>${teamNameInCaps}</td>
             <td>₹${objs[i].amt}</td>
             <td>₹${possibleWin}</td>
         </tr>

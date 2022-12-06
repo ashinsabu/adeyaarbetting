@@ -459,6 +459,14 @@ th,td{
 .other-bet-team-table th, .other-bet-team-table td{
     font-size: 14px !important;
 }
+.user-wise-table th, .user-wise-table td{
+    font-size: 14px !important;
+    
+}
+.user-wise-table th{
+    color: white;
+    background-color: #D23369;
+}
 @media only all and (max-width: 900px){
     body{
         overflow-x: hidden !important;
@@ -527,5 +535,8 @@ th,td{
     }
     .other-bet-team-table th, .other-bet-team-table td{
         font-size: 12px !important;
+    }
+    .user-wise-table th, .user-wise-table td{
+        font-size: 13px !important;
     }
 }

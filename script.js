@@ -10,11 +10,11 @@ let fixt=1;
 import imgLinks from './flagLinks.js';
 
 let nextMatchStart = "23:59:00"; 
-let nextMatchStartQatarTime = "18:00:00";
-let country1 = "Morocco";
-let country2 = "Spain";
-let country1Img = imgLinks['morocco'];
-let country2Img = imgLinks['spain'];
+let nextMatchStartQatarTime = "22:00:00";
+let country1 = "Portugal";
+let country2 = "Switzerland";
+let country1Img = imgLinks['portugal'];
+let country2Img = imgLinks['switzerland'];
 
 // let country3 = "Brazil";
 // let country4 = "Cameroon";
