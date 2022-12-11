@@ -2,13 +2,13 @@ import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/f
 
 let qFinalTeams = [
     
-    {
-        team: "brazil",
-        color: "#0DA044",
-        teamNameColor: "#FEE009",
-        accHead: "panelsStayOpen-headingSix",
-        accColl: "panelsStayOpen-collapseSix",
-    },
+    // {
+    //     team: "brazil",
+    //     color: "#0DA044",
+    //     teamNameColor: "#FEE009",
+    //     accHead: "panelsStayOpen-headingSix",
+    //     accColl: "panelsStayOpen-collapseSix",
+    // },
     
     {
         team: "argentina",
@@ -17,21 +17,21 @@ let qFinalTeams = [
         accHead: "panelsStayOpen-headingTwo",
         accColl: "panelsStayOpen-collapseTwo",
     },
-    {
-        team: "portugal",
-        color: "#FDFD96",
-        teamNameColor: "black",
-        accHead: "panelsStayOpen-headingSeven",
-        accColl: "panelsStayOpen-collapseSeven",
-    },
-    {
-        team: "netherlands",
-        color: "#B22732",
-        teamNameColor: "white",
-        accHead: "panelsStayOpen-headingOne",
-        accColl: "panelsStayOpen-collapseOne",
+    // {
+    //     team: "portugal",
+    //     color: "#FDFD96",
+    //     teamNameColor: "black",
+    //     accHead: "panelsStayOpen-headingEight",
+    //     accColl: "panelsStayOpen-collapseEight",
+    // },
+    // {
+    //     team: "netherlands",
+    //     color: "#B22732",
+    //     teamNameColor: "white",
+    //     accHead: "panelsStayOpen-headingOne",
+    //     accColl: "panelsStayOpen-collapseOne",
         
-    },
+    // },
     {
         team: "france",
         color: "#15359E",
@@ -42,17 +42,17 @@ let qFinalTeams = [
     {
         team: "morocco",
         color: "#19653D",
-        teamNameColor: "#C43036",
+        teamNameColor: "white",
         accHead: "panelsStayOpen-headingSeven",
         accColl: "panelsStayOpen-collapseSeven",
     },
-    {
-        team: "england",
-        color: "white",
-        teamNameColor: "red",
-        accHead: "panelsStayOpen-headingFour",
-        accColl: "panelsStayOpen-collapseFour",
-    },
+    // {
+    //     team: "england",
+    //     color: "white",
+    //     teamNameColor: "red",
+    //     accHead: "panelsStayOpen-headingFour",
+    //     accColl: "panelsStayOpen-collapseFour",
+    // },
     {
         team: "croatia",
         color: "#FF0B0B",
@@ -170,17 +170,18 @@ const updateBar = (qFinalTeams,objs) => { // also returns total bet
 
 
 const updateAccordions = (qFinalTeams,objs,total) => {
-    console.log(objs);
-
+    // console.log(objs);
+    document.querySelector('.user-wise-table').innerHTML = `<tr>
+        <th>User</th>
+        <th>Team</th>
+        <th>Bet Amt.</th>
+        <th>Possible Win</th>
+    </tr>`;
     let totals = {
-        netherlands: 0, 
         argentina: 0, 
         france: 0, 
-        england: 0, 
         croatia: 0, 
-        brazil: 0,
         morocco: 0,
-        portugal: 0,
     }
     for(let i=0;i<objs.length;i++){
         totals[`${objs[i].team}`] += objs[i].amt;

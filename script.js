@@ -11,10 +11,10 @@ import imgLinks from './flagLinks.js';
 
 let nextMatchStart = "23:59:00"; 
 let nextMatchStartQatarTime = "22:00:00";
-let country1 = "Portugal";
-let country2 = "Switzerland";
-let country1Img = imgLinks['portugal'];
-let country2Img = imgLinks['switzerland'];
+let country1 = "France";
+let country2 = "England";
+let country1Img = imgLinks['france'];
+let country2Img = imgLinks['england'];
 
 // let country3 = "Brazil";
 // let country4 = "Cameroon";
@@ -53,8 +53,8 @@ let qatarTime = ((String(there.getHours()).padStart(2, '0') + ":" + String(there
 
 
 
-if(qatarTime > nextMatchStartQatarTime){
-// if(false){
+// if(qatarTime > nextMatchStartQatarTime){
+if(true){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
