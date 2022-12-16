@@ -1,15 +1,34 @@
 import { getDatabase,ref,set,onValue,get,child } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js'
 
+let endTime = "21:30:00";
+
+function changeTimezone(date, ianatz) {
+
+    // suppose the date is 12:00 UTC
+    var invdate = new Date(date.toLocaleString('en-US', {
+      timeZone: ianatz
+    }));
+  
+    // then invdate will be 07:00 in Toronto
+    // and the diff is 5 hours
+    var diff = date.getTime() - invdate.getTime();
+  
+    // so 12:00 in Toronto is 17:00 UTC
+    return new Date(date.getTime() - diff); // needs to substract
+  
+  }
+  
+  // E.g.
+  var ourTime2 = new Date();
+  var there2 = changeTimezone(ourTime2, "Asia/Qatar");
+
+// console.log((String(ourTime.getHours()).padStart(2, '0') + ":" + String(ourTime.getMinutes()).padStart(2, '0')  + ":" + String(ourTime.getSeconds()).padStart(2, '0')));
+let qatarTime2 = ((String(there2.getHours()).padStart(2, '0') + ":" + String(there2.getMinutes()).padStart(2, '0')  + ":" + String(there2.getSeconds()).padStart(2, '0')));
+
+// console.log(curTime, nextMatchStart, (curTime > nextMatchStart));
+
+
 let qFinalTeams = [
-    
-    // {
-    //     team: "brazil",
-    //     color: "#0DA044",
-    //     teamNameColor: "#FEE009",
-    //     accHead: "panelsStayOpen-headingSix",
-    //     accColl: "panelsStayOpen-collapseSix",
-    // },
-    
     {
         team: "argentina",
         color: "#7EB2E1",
@@ -17,21 +36,6 @@ let qFinalTeams = [
         accHead: "panelsStayOpen-headingTwo",
         accColl: "panelsStayOpen-collapseTwo",
     },
-    // {
-    //     team: "portugal",
-    //     color: "#FDFD96",
-    //     teamNameColor: "black",
-    //     accHead: "panelsStayOpen-headingEight",
-    //     accColl: "panelsStayOpen-collapseEight",
-    // },
-    // {
-    //     team: "netherlands",
-    //     color: "#B22732",
-    //     teamNameColor: "white",
-    //     accHead: "panelsStayOpen-headingOne",
-    //     accColl: "panelsStayOpen-collapseOne",
-        
-    // },
     {
         team: "france",
         color: "#15359E",
@@ -46,13 +50,6 @@ let qFinalTeams = [
         accHead: "panelsStayOpen-headingSeven",
         accColl: "panelsStayOpen-collapseSeven",
     },
-    // {
-    //     team: "england",
-    //     color: "white",
-    //     teamNameColor: "red",
-    //     accHead: "panelsStayOpen-headingFour",
-    //     accColl: "panelsStayOpen-collapseFour",
-    // },
     {
         team: "croatia",
         color: "#FF0B0B",

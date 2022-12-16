@@ -9,12 +9,12 @@ let fixt=1;
 
 import imgLinks from './flagLinks.js';
 
-let nextMatchStart = "23:59:00"; 
 let nextMatchStartQatarTime = "22:00:00";
+let nextMatchDate = 14;
 let country1 = "France";
-let country2 = "England";
+let country2 = "Morocco";
 let country1Img = imgLinks['france'];
-let country2Img = imgLinks['england'];
+let country2Img = imgLinks['morocco'];
 
 // let country3 = "Brazil";
 // let country4 = "Cameroon";
@@ -45,7 +45,8 @@ function changeTimezone(date, ianatz) {
   // E.g.
   var ourTime = new Date();
   var there = changeTimezone(ourTime, "Asia/Qatar");
-
+  
+var thereDate = (there.getDate());
 // console.log((String(ourTime.getHours()).padStart(2, '0') + ":" + String(ourTime.getMinutes()).padStart(2, '0')  + ":" + String(ourTime.getSeconds()).padStart(2, '0')));
 let qatarTime = ((String(there.getHours()).padStart(2, '0') + ":" + String(there.getMinutes()).padStart(2, '0')  + ":" + String(there.getSeconds()).padStart(2, '0')));
 
@@ -53,8 +54,8 @@ let qatarTime = ((String(there.getHours()).padStart(2, '0') + ":" + String(there
 
 
 
-// if(qatarTime > nextMatchStartQatarTime){
-if(true){
+if(qatarTime > nextMatchStartQatarTime || thereDate>nextMatchDate){
+// if(true){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
