@@ -9,12 +9,12 @@ let fixt=1;
 
 import imgLinks from './flagLinks.js';
 
-let nextMatchStartQatarTime = "22:00:00";
-let nextMatchDate = 14;
+let nextMatchStartQatarTime = "18:00:00";
+let nextMatchDate = 18;
 let country1 = "France";
-let country2 = "Morocco";
+let country2 = "Argentina";
 let country1Img = imgLinks['france'];
-let country2Img = imgLinks['morocco'];
+let country2Img = imgLinks['argentina'];
 
 // let country3 = "Brazil";
 // let country4 = "Cameroon";
@@ -39,7 +39,6 @@ function changeTimezone(date, ianatz) {
   
     // so 12:00 in Toronto is 17:00 UTC
     return new Date(date.getTime() - diff); // needs to substract
-  
   }
   
   // E.g.
@@ -54,8 +53,8 @@ let qatarTime = ((String(there.getHours()).padStart(2, '0') + ":" + String(there
 
 
 
-if(qatarTime > nextMatchStartQatarTime || thereDate>nextMatchDate){
-// if(true){
+// if(qatarTime > nextMatchStartQatarTime || thereDate>nextMatchDate){
+if(true){
     canBet = false;
     document.querySelector('.view-bet-area').style.display = 'none';
     document.querySelector('.tables').style.display = "flex";
@@ -276,23 +275,6 @@ const startObserver = () => {
         return data;
         // }
     });
-}
-
-const userToPassword = {
-    "ashin":"messifan",
-    "aryan":"bitchmallu69",
-    "pratyush":"betxyz",
-    "manan":"ilovemallus",
-    "ankur":"mallu123",
-    "boidushya":"password1234",
-    "dev":"sexymallu69",
-    "drumil":"xyz",
-    "jayesh":"ashinmom12",
-    "rahul":"ankurlodu",
-    "rohan":"ashin69",
-    "kartik":"ashinbabyanalsex",
-    "ayush" : "ashinsabu",
-    "rishikesh" : "rishikesh",
 }
 
 const placebet = (fixt,user,betAmt,team) => {
