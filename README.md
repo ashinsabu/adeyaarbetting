@@ -17,7 +17,12 @@ Technologies: JavaScript, Firebase, CSS(+Bootstrap for some Components), HTML
 
 # Screenshots
 
+![image](https://user-images.githubusercontent.com/38109596/208201792-613ab1b3-6b78-4b1f-9b2a-4fa419b9271c.png)
 
-<img src="https://media.discordapp.net/attachments/1048733444735238204/1048733473743065168/image.png?width=282&height=585">
-<img src ="https://cdn.discordapp.com/attachments/1048733444735238204/1048736779349540944/image.png">
-<img src="https://media.discordapp.net/attachments/1048733444735238204/1048735778303389716/image.png?width=380&height=585">
+![image](https://user-images.githubusercontent.com/38109596/208201923-0c0e27f7-aa22-4380-911f-f3d166f76178.png)
+
+![image](https://user-images.githubusercontent.com/38109596/208201835-38e5b5db-5412-4509-9b76-e061f946877f.png)
+
+![image](https://user-images.githubusercontent.com/38109596/208201865-ec15ea7d-98d6-4fd7-819f-14adb9cd371f.png)
+
+![image](https://user-images.githubusercontent.com/38109596/208201873-2571c336-1210-40b8-94aa-dea65e172916.png)
